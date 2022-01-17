@@ -1,0 +1,293 @@
+body {
+    font-size: 15pt;
+    color: white;
+    background-color: black;
+}
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  height: 30%;
+  max-width: 55%;
+  font-size: 3.2vw;
+  padding-left: 5%;
+}
+h2{
+  margin: 5px 5px 0px 0px;
+  font-size: 3.2vw;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+}
+
+h3{
+  margin:0px 5px;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  font-size: 2.3vw;
+}
+p{
+  font-size: 1.2vw;
+  padding-left: 2%;
+  /* border:1px white solid; */
+}
+.content{
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  background-size:auto 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url(./img/femida.png);
+  }
+.top-blur{
+  z-index: 2;
+  width: 100%;
+  height: 115px;
+  background: #0000005C;
+  position: fixed;
+  top: 0px;
+  backdrop-filter: blur(5px);
+}
+.phone{
+  z-index: 5;
+  position: fixed;
+  top: 2px;
+  justify-content: space-between;
+  border: 1px solid #F9C789;
+  width: 40%;
+  float: right;
+  min-height: 50px;
+  height: fit-content;
+  margin-bottom: 20px;
+  display: flex;
+  right: 0px;
+}
+.phone-number{
+  margin: 3px;
+  font-size: 18px;
+  color: antiquewhite;
+  
+  flex:2;
+  display: flex;
+  align-items: center;
+  
+  
+}
+.phone-text{
+  background-color: #D3A15B;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-size: 2.5vw;
+  flex:1;
+  justify-content: center;
+}
+.arrow{
+  display: flex;
+  width: 60%;
+  height: 30px;
+  bottom:19%;
+  margin-left: 10%;
+  margin:5% 10%;
+}
+.rectangle{
+  color: #F9C789;
+  text-shadow: 1px 1px #6D6831B8;
+  font-size:small;
+  
+  text-transform:uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+  height: 42px;
+  width: 100%;
+  background-color: #9400DDD4;
+}
+.triangle-right{
+   
+   border-top: 21px solid transparent;
+   border-bottom: 21px solid transparent;
+   border-left: 30px solid #9400DDD4;
+}
+.header{
+  z-index: 9;
+  position: fixed;
+  top: 65px;
+  margin: 0 auto;
+  width: 100vw;
+  display: flex;
+  height: 50px;
+  background-color: #600D94A1;
+  justify-content: space-between;
+}
+.header-circle{ 
+  
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background:#F9C789DD;
+  backdrop-filter: blur(2px);
+  background-clip: padding-box;
+  z-index: 9999;
+  border: 7px solid #F9C78933;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+.header-circle>img{
+  padding-top: 10px;
+  width: 70%;
+  height: 70%;
+}
+.header-elem{
+  height: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header>div{
+  display: flex;
+  font-size: 3.2vw;
+  align-items: center;
+  width: 39%;
+  height: 100%;
+  justify-content: space-evenly;
+  color: #FFF032D6;
+}
+
+
+.header-rightSide{
+  margin-right: 19px;
+}
+.header-elem:active{
+  background-color: #48006CD1;
+}
+.main{
+  top: 50px;
+  margin: 5px 0px;
+  margin-top: 140px;
+}
+
+.block{
+  
+  position: relative;
+  display:flex;
+  /* border-bottom: 10px solid #F9C789; */ 
+  
+  min-height: 20vh;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  overflow: scroll;
+}
+.block-text{
+  padding-top: 1%;
+  padding-left: 1%;
+  max-width: 55%;
+  margin-bottom: 50px;
+}
+
+.text{
+  margin-left: 5px;
+border-left: 1px solid #F9C789;
+}
+
+.block1{
+  
+  
+}
+.block2{
+  background-image: url(./img/table.jpg);
+  background-size: 120% ;
+}
+.block2-blue{
+  
+  color: #BCB4DD;
+  width: 65%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  background: #21005870;
+  backdrop-filter: blur(4px);
+}
+.block2-list{
+  margin-top: 20px;
+  color: ghostwhite;
+  font-size: 12px;
+}
+.block2-blue * {
+  /* background-color: red; */
+}
+.block2-list2{
+  
+  list-style: none;
+  font-size: 14px;
+  margin-top: -18px;
+  font-style: bold;
+  color: white;
+}
+.block2-arrow{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+  width: 62%;
+  background-color: #F9C789;
+  height: 16px;
+}
+.block2-circle{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ height: 50px;
+ width: 50px;
+  background-image: url('./img/handcuffs.png');
+  background-size:  70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F9C789;
+  background-clip: padding-box;
+  border-radius: 50%;
+  margin-left: -25px;
+  border-right-color: transparent;
+  border-right-width: 1px;
+  
+}
+.block2-circle:after{
+  content: '';
+  display: block;
+  z-index: -1;
+  background: #21005870;
+  width: 115%;
+  height: 115%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.block2-arrow-triangle-right{
+  width: 0px;
+  height: 0px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 20px solid #F9C789;
+  margin-right: -20px;  
+  }
+
+
+.block2-blue>h2{
+  padding-right: 5px;
+  text-align: right;
+  
+  
+}
+.block2-blue>h3{
+ line-height: 15px;
+  text-align: right;
+  padding-right: 5px;
+}
+.block3{
+  
+}
