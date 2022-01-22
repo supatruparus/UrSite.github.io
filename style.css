@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat:wght@200&family=Open+Sans:wdth,wght@96.5,800&family=Raleway:wght@228&family=Roboto:wght@300&family=Rubik+Mono+One&display=swap');
  body {
-    font-size: 12px;
+    font-size: 30px;
     color: #d0d0d0;
     background-color: black;
     background-image: url(./img/back.png);
@@ -12,9 +12,13 @@
 
 .content {
     width: 65%;
+    min-width: 25rem;
     height: 100%;
-    font-size: medium;
+    /* font-size: 3em; */
     margin: 0 auto;
+    padding-top: 0.20000000000000015em;
+    padding-left: 1.3999999999999995em;
+    box-sizing: border-box;
     /* background-size: 100% 100%; */
     background-position: right;
     background-repeat: no-repeat;
@@ -31,16 +35,17 @@ h1 {
 
 h2 {
     margin: 5px 5px 0px 0px;
-    font-size: 3.2vw;
+    /* font-size: xxx-large; */
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
 }
 
 h3 {
-    margin: 0px 5px;
+    margin: 0px;
+    /* margin-inline: initial; */
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
-    font-size: 2.3vw;
+    /* font-size: 2.3vw; */
 }
 
 p {
@@ -68,11 +73,13 @@ header {
     position: fixed;
     top: 0px;
     left: 0px;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    width: 100%;
-    height: 15vh;
-    flex-direction: column;
+    /* width: 100%; */
+    /* height: 15vh; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: stretch; */
 }
 
 .top-blur {
@@ -87,17 +94,20 @@ header {
 
 .header-top {
     /* margin: 5px 2vw 5px 0; */
-    /* width: min(40%, 150px); */
+    /* width: 500px; */
     height: 75px;
+    position: relative;
+    /* right: 0px; */
+    justify-content: right;
     display: flex;
-    align-self: flex-end;
-    right: 0px;
+    /* align-self: flex-end; */
+    /* right: 0px; */
 }
 
 header .phone {
     margin-top: 1%;
-    right: 19vw;
-    position: relative;
+    /* right: -38vw; */
+    /* position: absolute; */
     display: flex;
     height: 80%;
     border: 1px solid #F9C789;
@@ -233,9 +243,11 @@ main {
 }
 
 .block {
+    /* padding-top: -10em; */
+    /* font-size:small; */
     width: 100%;
     /* min-height: 400px; */
-    height: 500px;
+    /* height: 500px; */
     position: relative;
     /* display: flex; */
     /* border-bottom: 10px solid #F9C789; */
@@ -266,13 +278,13 @@ main {
 .block2-list {
     margin-top: 20px;
     color: ghostwhite;
-    font-size: 12px;
+    /* font-size: medium; */
 }
 
 .block2-list2 {
     list-style: none;
-    font-size: x-large;
-    margin-top: -25px;
+    font-size: 1.2em;
+    margin-top: -39px;
     font-style: bold;
     color: white;
 }
@@ -281,10 +293,13 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -8px;
+    margin-top: -11px;
     width: 62%;
+    max-width: 400px;
+    min-width: 301px;
     background-color: #F9C789;
-    height: 20px;
+    height: 1.1em;
+    font-size: 25px;
 }
 
 .block2-circle {
@@ -292,8 +307,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
+    height: 1.9em;
+    width: 1.9em;
     background-image: url('./img/handcuffs.png');
     background-size: 70% 70%;
     background-position: center;
@@ -320,8 +335,8 @@ main {
 .block2-arrow-triangle-right {
     width: 0px;
     height: 0px;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+    border-top: 0.55em solid transparent;
+    border-bottom: 0.55em solid transparent;
     border-left: 20px solid #F9C789;
     margin-right: -20px;
 }
@@ -337,8 +352,7 @@ main {
     padding-right: 5px;
 }
 
-.block3 {
-}
+
 
 @media screen and (max-width: 700px) {
     header {
