@@ -1,118 +1,150 @@
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat:wght@200&family=Open+Sans:wdth,wght@96.5,800&family=Raleway:wght@228&family=Roboto:wght@300&family=Rubik+Mono+One&display=swap');
+ body {
     font-size: 12px;
-    color: white;
+    color: #d0d0d0;
     background-color: black;
+    background-image: url(./img/back.png);
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-.content{
-  width: 65%;
-  height: 100%;
-  margin: 0 auto;
-  background-size:100% 100%;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-h1{
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  height: 30%;
-  max-width: 55%;
-  font-size: 3.2vw;
-  padding-left: 5%;
-}
-h2{
-  margin: 5px 5px 0px 0px;
-  font-size: 3.2vw;
-  font-family: 'Courier New', Courier, monospace;
-  text-transform: uppercase;
+
+.content {
+    width: 65%;
+    height: 100%;
+    font-size: medium;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
-h3{
-  margin:0px 5px;
-  font-family: 'Courier New', Courier, monospace;
-  text-transform: uppercase;
-  font-size: 2.3vw;
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    height: 30%;
+    max-width: 55%;
+    font-size: 3.2vw;
+    padding-left: 5%;
 }
-p{
-  font-size: 1.2vw;
-  padding-left: 2%;
-  /* border:1px white solid; */
+
+h2 {
+    margin: 5px 5px 0px 0px;
+    font-size: 3.2vw;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
 }
-.img-arrow{
-  position:absolute;
+
+h3 {
+    margin: 0px 5px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 2.3vw;
 }
-.block1-content{
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  background-size:auto 100%;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-image: url(./img/femida.png);
-  }
-  header{
+
+p {
+    font-size: 1.2vw;
+    padding-left: 2%;
+    /* border:1px white solid; */
+}
+
+.img-arrow {
+    position: absolute;
+}
+
+.block1-content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-size: auto 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url(./img/femida.png);
+}
+
+header {
     z-index: 25;
     position: fixed;
     top: 0px;
     left: 0px;
-    display: inline-block;
-    width: 100%;
-    height: 55px;
+    display: flex;
     flex-direction: column;
-  }
-.top-blur{
-  z-index: -1;
-  width: 100%;
-  height: 115px;
-  background: #0000005C;
-  position: absolute;
-  top: 0px;
-  backdrop-filter: blur(5px);
+    width: 100%;
+    height: 15vh;
+    flex-direction: column;
 }
-header .phone{
-  margin: 5px 2vw 5px 0;
-  float: right;
-  justify-self: right;
-  border: 1px solid #F9C789;
-  /* width: min(40%, 150px); */
-  min-height: 50px;
-  height: 40%;
-  width: min(30%, 100vw);
-  display: flex;
-  right: 0px;
+
+.top-blur {
+    z-index: -1;
+    width: 100%;
+    height: 115px;
+    background: #0000005C;
+    position: absolute;
+    top: 0px;
+    backdrop-filter: blur(5px);
 }
-.phone-number{
-  margin: 3px;
-  font-size: xx-large;
-  color: antiquewhite;
-  font-family: 'Rubik Mono One', sans-serif;
-  flex:2;
-  display: flex;
-  align-items: center;
-  
-  
+
+.header-top {
+    /* margin: 5px 2vw 5px 0; */
+    /* width: min(40%, 150px); */
+    height: 75px;
+    display: flex;
+    align-self: flex-end;
+    right: 0px;
 }
-.phone-text{
-  background-color: #D3A15B;
-  display: flex;
-  align-items: center;
-  flex:1;
-  justify-content: center;
+
+header .phone {
+    margin-top: 1%;
+    right: 20px;
+    position: relative;
+    display: flex;
+    height: 80%;
+    border: 1px solid #F9C789;
 }
-.block1-arrow{
-  background-image: url('./img/arrow.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  /* background-color: rgb(156, 48, 48); */
-  width: min(20vw, 700px);
-  /* height: 50px; */
-  margin:5% 10%;
-  font-size: x-large;
+
+.phone-number {
+    margin: 3px;
+    margin-left: 5px;
+    font-size: large;
+    color: antiquewhite;
+    font-family: 'Rubik Mono One', sans-serif;
+    flex: 3.5;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding: 0.3em 0 0 0;
 }
+
+.phone-text {
+    background-color: #D3A15B;
+    display: flex;
+    /* justify-items: center; */
+    align-items:center;
+    flex: 1;
+    /* padding-left: 150px; */
+    text-transform: uppercase;
+    justify-content: center;
+    font-family: "Open-Sans", sans-serif;
+    font-size: smaller;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.block1-arrow {
+    background-image: url('./img/arrow.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-color: rgb(156, 48, 48); */
+    /* width: min(20vw, 700px); */
+    /* height: 50px; */
+    max-width: 21em;
+    margin: 5% 10%;
+    font-size: medium;
+    font-family: 'Rubik Mono One';
+}
+
 /* .rectangle{
   color: #F9C789;
   text-shadow: 1px 1px #6D6831B8;
@@ -125,196 +157,197 @@ header .phone{
   height: 42px;
   background-color: #9400DDD4;
 } */
-.triangle-right{
-   
-   border-top: 21px solid transparent;
-   border-bottom: 21px solid transparent;
-   border-left: 30px solid #9400DDD4;
-}
-.header{
-  top: 65px;
-  margin: 0 auto;
-  width: 100vw;
-  display: flex;
-  height: 50px;
-  background-color: #600D94A1;
-  justify-content: space-between;
-}
-.header-circle{ 
-  
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  background:#F9C789DD;
-  backdrop-filter: blur(2px);
-  background-clip: padding-box;
-  z-index: 9999;
-  border: 7px solid #F9C78933;
-  align-content: center;
-  justify-content: center;
-  display: flex;
-}
-.header-circle>img{
-  padding-top: 10px;
-  width: 70%;
-  height: 70%;
-}
-.header-elem{
-  height: 100%;
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.header-elem:hover{
-  background: #ffd8a870;
-  box-shadow: 10px rgba(255, 184, 70, 0.527);
+.triangle-right {
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-left: 30px solid #9400DDD4;
 }
 
-.header>div{
-  display: flex;
-  font-size: min(3.2vw, 42px);
-  align-items: center;
-  width: 39%;
-  height: 100%;
-  justify-content: space-evenly;
-  color: #FFF032D6;
+.header {
+    top: 65px;
+    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    height: 75px;
+    background-size: 100% 100%;
+    background-image: url('./img/header.png');
+    /* background-color: #600D94A1; */
+    justify-content: space-between;
 }
 
-
-
-.header-rightSide{
-  margin-right: 19px;
-}
-.header-elem:active{
-  background-color: #48006CD1;
-}
-.main{
-  
-  margin-top: 140px;
-}
-
-.block{
-  width: 100%;
-  min-height: 300px;
-  position: relative;
-  display:flex;
-  /* border-bottom: 10px solid #F9C789; */ 
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  
-  
-}
-.block1-content{
-  padding-top: 1%;
-  padding-left: 1%;
-  max-width: 55%;
-  margin-bottom: 50px;
+.header-circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: #F9C789DD;
+    backdrop-filter: blur(2px);
+    background-clip: padding-box;
+    z-index: 9999;
+    border: 7px solid #F9C78933;
+    align-content: center;
+    justify-content: center;
+    display: flex;
 }
 
-.text{
-  margin-left: 5px;
-border-left: 1px solid #F9C789;
+.header-circle>img {
+    padding-top: 10px;
+    width: 70%;
+    height: 70%;
 }
 
-
-.block2{
-  background-image: url(./img/table.jpg);
-  background-size: contain auto ;
-  background-position-x: center;
-  display: block;
-}
-.block2-content{
-  
-  color: #BCB4DD;
-
-  height: 100%; 
-  background: #21005870;
-  backdrop-filter: blur(4px);
-}
-.block2-list{
-  margin-top: 20px;
-  color: ghostwhite;
-  font-size: 12px;
-}
-.block2-blue * {
-  /* background-color: red; */
-}
-.block2-list2{
-  
-  list-style: none;
-  font-size: 14px;
-  margin-top: -18px;
-  font-style: bold;
-  color: white;
-}
-.block2-arrow{
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: -10px;
-  width: 62%;
-  background-color: #F9C789;
-  height: 16px;
-}
-.block2-circle{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- height: 50px;
- width: 50px;
-  background-image: url('./img/handcuffs.png');
-  background-size:  70% 70%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #F9C789;
-  background-clip: padding-box;
-  border-radius: 50%;
-  margin-left: -25px;
-  border-right-color: transparent;
-  border-right-width: 1px;
-  
-}
-.block2-circle:after{
-  content: '';
-  display: block;
-  z-index: -1;
-  background: #21005870;
-  width: 115%;
-  height: 115%;
-  border-radius: 50%;
-  position: absolute;
+.header-elem {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.block2-arrow-triangle-right{
-  width: 0px;
-  height: 0px;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 20px solid #F9C789;
-  margin-right: -20px;  
-  }
+.header-elem:hover {
+    background: #ffd8a870;
+    box-shadow: 10px rgba(255, 184, 70, 0.527);
+}
 
+.header>div {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    display: flex;
+    font-size: min(3.2vw, 42px);
+    align-items: center;
+    width: 39%;
+    height: 100%;
+    justify-content: space-evenly;
+    color: #FFF032D6;
+}
 
-.block2-blue>h2{
-  padding-right: 5px;
-  text-align: right;
-  
-  
+.header-rightSide {
+    margin-right: 19px;
 }
-.block2-blue>h3{
- line-height: 15px;
-  text-align: right;
-  padding-right: 5px;
+
+.header-elem:active {
+    background-color: #48006CD1;
 }
-.block3{
-  
+
+main {
+    margin-top: 130px;
 }
-@media screen and (max-width:700px) {
-  header{
-    position: static;
-  }
+
+.block {
+    width: 100%;
+    /* min-height: 400px; */
+    height: 500px;
+    position: relative;
+    display: flex;
+    /* border-bottom: 10px solid #F9C789; */
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.block1-content {
+    padding-top: 1%;
+    padding-left: 1%;
+    max-width: 55%;
+    margin-bottom: 50px;
+}
+
+.text {
+    margin-left: 5px;
+    border-left: 1px solid #F9C789;
+}
+
+.block2 {
+    background-image: url(./img/bg2.png);
+    background-size: 100% 100% ;
+    background-position-x: center;
+    display: block;
+}
+
+.block2-content {
+    color: #BCB4DD;
+    height: 100%;
+    background: #21005870;
+    backdrop-filter: blur(4px);
+}
+
+.block2-list {
+    margin-top: 20px;
+    color: ghostwhite;
+    font-size: 12px;
+}
+
+.block2-list2 {
+    list-style: none;
+    font-size: x-large;
+    margin-top: -25px;
+    font-style: bold;
+    color: white;
+}
+
+.block2-arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -8px;
+    width: 62%;
+    background-color: #F9C789;
+    height: 20px;
+}
+
+.block2-circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-image: url('./img/handcuffs.png');
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F9C789;
+    background-clip: padding-box;
+    border-radius: 50%;
+    margin-left: -25px;
+    border-right-color: transparent;
+    border-right-width: 1px;
+}
+
+.block2-circle:after {
+    content: '';
+    display: block;
+    z-index: -1;
+    background: #21005870;
+    width: 115%;
+    height: 115%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.block2-arrow-triangle-right {
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #F9C789;
+    margin-right: -20px;
+}
+
+.block2-blue>h2 {
+    padding-right: 5px;
+    text-align: right;
+}
+
+.block2-blue>h3 {
+    line-height: 15px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.block3 {
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        position: static;
+    }
 }
