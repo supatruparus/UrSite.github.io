@@ -12,7 +12,7 @@
 
 .content {
     width: 65%;
-    min-width: 25rem;
+    min-width: 20rem;
     height: 100%;
     /* font-size: 3em; */
     margin: 0 auto;
@@ -29,7 +29,6 @@ h1 {
     text-transform: uppercase;
     height: 30%;
     max-width: 55%;
-    font-size: 3.2vw;
     padding-left: 5%;
 }
 
@@ -110,7 +109,7 @@ header {
 header .phone {
     /* right: -38vw; */
     /* position: absolute; */
-    margin-right: 9em;
+    margin-right: 0 auto;
     display: flex;
     height: 80%;
     border: 1px solid #F9C789;
@@ -139,10 +138,10 @@ header .phone {
     text-transform: uppercase;
     justify-content: center;
     font-family: "Open-Sans", sans-serif;
-    font-size: smaller;
+    font-size: xx-small;
     flex-wrap: nowrap;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
 }
 
 .block1-arrow {
@@ -157,19 +156,6 @@ header .phone {
     font-size: medium;
     font-family: 'Rubik Mono One';
 }
-
-/* .rectangle{
-  color: #F9C789;
-  text-shadow: 1px 1px #6D6831B8;
-  font-size: min(2.5vw, 20px);
-  text-transform:uppercase;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  padding-left: 3%;
-  height: 42px;
-  background-color: #9400DDD4;
-} */
 .triangle-right {
     border-top: 21px solid transparent;
     border-bottom: 21px solid transparent;
@@ -361,5 +347,14 @@ main {
 @media screen and (max-width: 700px) {
     header {
         position: static;
+        height: 6em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+    main {
+    margin-top: 2em;
+    padding-left: 0em;
+}
+
 }
