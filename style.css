@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat:wght@200&family=Open+Sans:wdth,wght@96.5,800&family=Raleway:wght@228&family=Roboto:wght@300&family=Rubik+Mono+One&display=swap');
  body {
-    font-size: 28px;
+    font-size: 22px;
     color: #d0d0d0;
     background-color: black;
     background-image: url(./img/back.png);
@@ -8,16 +8,22 @@
     display: flex;
     flex-direction: column;
     align-content: space-around;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content {
+    position: relative;
+    background-color: cornflowerblue;
     width: 65%;
+    z-index: -10;
+    overflow: visible;
     min-width: 70rem;
-    height: 100%;
+    min-height: 20em;
+    /* height: 100%; */
     /* font-size: 3em; */
     margin: 0 auto;
-    padding-top: 0.20000000000000015em;
-    padding-left: 1.3999999999999995em;
+    padding-top: -11.8em;
+    /* padding-left: 1.3999999999999995em; */
     box-sizing: border-box;
     /* background-size: 100% 100%; */
     background-position: right;
@@ -33,14 +39,14 @@ h1 {
 }
 
 h2 {
-    margin: 5px 5px 0px 0px;
+    margin: 5px 5px 0 1em;
     /* font-size: xxx-large; */
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
 }
 
 h3 {
-    margin: 0px;
+    margin: 1.6930901125533637e-15em 1em 1em 1.3000000000000003em;
     /* margin-inline: initial; */
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
@@ -59,8 +65,9 @@ p {
 
 .block1-content {
     /* width: 100%; */
-    /* height: 100%; */
+    /* height: auto; */
     /* margin: 0 auto; */
+    overflow: overlay;
     background-size: auto 100%;
     background-color: black;
     background-position: right bottom;
@@ -156,8 +163,8 @@ header .phone {
     /* width: min(20vw, 700px); */
     /* height: 50px; */
     max-width: 21em;
-    margin: 5% 10%;
-    font-size: small;
+    margin: 2em 0 2em 5em;
+    font-size: 1em;
     font-family: 'Rubik Mono One';
 }
 .triangle-right {
@@ -238,8 +245,8 @@ main {
 .block {
     /* padding-top: -10em; */
     /* font-size: 0.6em; */
-    width: 100%;
-    min-height: 20em;
+    /* width: 100%; */
+    min-height: 18em;
     /* height: 500px; */
     position: relative;
     box-sizing: border-box;
@@ -252,51 +259,65 @@ main {
 
 
 .text {
-    margin-left: 5px;
+    margin-left: 31px;
     font-size: 1em;
     border-left: 1px solid #F9C789;
 }
 
-.block2 {
-    background-image: url(./img/bg2.png);
-    background-position-x: center;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
+
+.block2 img{
+    /* background-size: auto 100%; */
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.block2-content {
+
+.block2-blur{
+    position: absolute;
+    z-index: -1;
     color: #BCB4DD;
     background: #21005870;
     backdrop-filter: blur(4px);
+    height: 100%;
+    width: 100%;
 }
 
 .block2-list {
     margin-top: 20px;
+    z-index: 5;
+    margin-left: -1em;
     color: ghostwhite;
+    margin-left: 1.3000000000000003em;
     /* font-size: medium; */
 }
 
 .block2-list2 {
     list-style: none;
+    position: relative;
     font-size: 1.2em;
-    margin-top: -14px;
-    font-style: bold;
+    top: -0.7000000000000001em;
+    margin-top: 3px;
     color: white;
 }
 
 .block2-arrow {
     display: flex;
-    margin-left: -2.5999999999999996em;
+    z-index: -1;
+    margin-left: -3.099999999999998em;
     justify-content: space-between;
     align-items: center;
     /* margin-top: -11px; */
     width: 62%;
+    position: absolute;
+    top: 2.7755575615628914e-17em;
     max-width: 400px;
     min-width: 301px;
     background-color: #F9C789;
-    height: 1.1em;
-    font-size: 25px;
+    height: 1.0999999999999996em;
+    font-size: 30px;
 }
 
 .block2-circle {
@@ -304,8 +325,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.9em;
-    width: 1.9em;
+    height: 3em;
+    width: 3em;
     background-image: url('./img/handcuffs.png');
     background-size: 70% 70%;
     background-position: center;
