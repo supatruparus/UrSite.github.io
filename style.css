@@ -309,10 +309,10 @@ main {
     margin-left: -3.099999999999998em;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: -11px; */
+    margin-top: -14px;
     width: 62%;
     position: absolute;
-    top: 2.7755575615628914e-17em;
+    /* top: 2.7755575615628914e-17em; */
     max-width: 400px;
     min-width: 301px;
     background-color: #F9C789;
@@ -322,7 +322,7 @@ main {
 
 .block2-circle {
     position: relative;
-    display: flex;
+    display: flex;a
     justify-content: center;
     align-items: center;
     height: 3em;
