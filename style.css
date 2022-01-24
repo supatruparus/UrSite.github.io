@@ -20,7 +20,7 @@
 }
 .content {
     position: relative;
-    background-color: cornflowerblue;
+    background-color: cornflowerblue; 
     width: 65%;
     z-index: -10;
     overflow: visible;
@@ -315,17 +315,20 @@ main {
 .block2-arrow {
     display: flex;
     z-index: -1;
-    margin-left: -3.099999999999998em;
+    margin-left: -3;
     justify-content: space-between;
     align-items: center;
     /* margin-top: 0px; */
     width: 62%;
     position: absolute;
+    /* top: 0px; */
     /* top: 2.7755575615628914e-17em; */
     max-width: 400px;
     min-width: 301px;
+    left: -1em;
+    margin-top: 0.5em;
     background-color: #F9C789;
-    height: 1.0999999999999996em;
+    height: 1.0em;
     font-size: 1.1em;
 }
 
