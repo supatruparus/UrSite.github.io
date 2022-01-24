@@ -20,9 +20,15 @@
     font-size: 1.1em;
     
 }
-.block2-arrowList img{
+#block2-list-arrow{
     object-fit: 100% auto;
     width: 12em;
     height: 4em;
+}
+.block2-arrowList #handcuffs{
+    margin-left:0.6em;
+    position: absolute;
+    width: 2.3em;
+    height: 2.3em;
 }
 

@@ -278,19 +278,28 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -10;
+    overflow: hidden;
     
     
 }
 .block2 .content{
     background-color: unset;
 }
-.block2 .arrow{
+.block2 #registration{
+    margin-right: 0.1em;
+    font-size: 0.7em;
+    font-weight:bolder;
+    color:midnightblue;
     position: absolute;
     right: 1em;
     top: 8em;
     z-index: 1;
     width: min-content;
     text-align: right;
+}
+.block2 #registration p2{
+    display: block;
+    margin-right: 0.9em;
 }
 .block2 #molot{
     position: absolute;
@@ -300,10 +309,13 @@ main {
 }
 .block2 h2{
     text-align: right;
-    
+    color: #aca5d7;
+    text-shadow: 0.04em 0.06em #594aaf;
 }
 .block2 h3{
     text-align: right;
+    color: #aca5d7;
+    text-shadow: 0.04em 0.06em #594aaf;;
     
 
 }
@@ -315,8 +327,8 @@ main {
     margin: 0 auto;
     width: 100%;
     color: #140f27da;
-    background: rgb(105 62 172 / 48%);
-    backdrop-filter: blur(1.1000000000000012px);
+    background: rgb(105 62 172 / 64%);
+    backdrop-filter: blur(3.8px);
     height: 100%;
 }
 
@@ -338,7 +350,13 @@ main {
     color: white;
 }
 
-
+.adventages .content{
+    background-color: transparent;
+    
+}
+.adventages .flexlist{
+    
+}
 
 
 
