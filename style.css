@@ -29,7 +29,7 @@
     /* height: 100%; */
     /* font-size: 3em; */
     margin: 0 auto;
-    padding-top: 0.7em;
+    padding-top: 0.3em;
     padding-right: 1em;
     padding-left: 1em;
     padding-bottom: 1em;
@@ -262,10 +262,7 @@ main {
     /* background-repeat: no-repeat; */
     /* background-size: auto 100%; */
 }
-.block img{
-    object-fit: cover;
-    z-index: -3;
-}
+
 
 
 
@@ -286,6 +283,20 @@ main {
 }
 .block2 .content{
     background-color: unset;
+}
+.block2 .arrow{
+    position: absolute;
+    right: 1em;
+    top: 8em;
+    z-index: 1;
+    width: min-content;
+    text-align: right;
+}
+.block2 #molot{
+    position: absolute;
+    bottom: -15%;
+    height: 60%;
+    right: 0px;
 }
 .block2 h2{
     text-align: right;
