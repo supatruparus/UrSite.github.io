@@ -10,7 +10,14 @@
     align-content: space-around;
     font-family: 'Montserrat', sans-serif;
 }
-
+@keyframes opacity{
+    0% {
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
 .content {
     position: relative;
     background-color: cornflowerblue;
@@ -197,6 +204,8 @@ header .phone {
     align-content: center;
     justify-content: center;
     display: flex;
+    animation: opacity 1s ease-in-out infinite;
+    animation-direction: alternate;
 }
 
 .header-circle>img {
@@ -227,7 +236,7 @@ header .phone {
     width: 39%;
     height: 100%;
     justify-content: space-evenly;
-    color: #FFF032D6;
+    /* color: #FFF032D6; */
 }
 
 .header-rightSide {
@@ -279,8 +288,8 @@ main {
     position: absolute;
     z-index: -1;
     color: #BCB4DD;
-    background: #21005870;
-    backdrop-filter: blur(4px);
+    background: rgb(94 83 64 / 12%);
+    backdrop-filter: blur(1.1000000000000012px);
     height: 100%;
     width: 100%;
 }
@@ -309,7 +318,7 @@ main {
     margin-left: -3.099999999999998em;
     justify-content: space-between;
     align-items: center;
-    margin-top: -14px;
+    /* margin-top: 0px; */
     width: 62%;
     position: absolute;
     /* top: 2.7755575615628914e-17em; */
@@ -317,12 +326,12 @@ main {
     min-width: 301px;
     background-color: #F9C789;
     height: 1.0999999999999996em;
-    font-size: 30px;
+    font-size: 1.1em;
 }
 
 .block2-circle {
     position: relative;
-    display: flex;a
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 3em;
