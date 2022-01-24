@@ -21,17 +21,18 @@
 
 .content {
     position: relative;
-    background-color: cornflowerblue; 
+    background-color: cornflowerblue;
     width: 65%;
     z-index: -10;
     overflow: visible;
-    min-width: 70rem;
     min-height: 20em;
     /* height: 100%; */
     /* font-size: 3em; */
     margin: 0 auto;
-    padding-top: -11.8em;
-    /* padding-left: 1.3999999999999995em; */
+    padding-top: 0.7em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
     box-sizing: border-box;
     /* background-size: 100% 100%; */
     background-position: right;
@@ -75,7 +76,7 @@ p {
     /* width: 100%; */
     /* height: auto; */
     /* margin: 0 auto; */
-    overflow: overlay;
+    /* overflow: overlay; */
     background-size: auto 100%;
     background-color: black;
     background-position: right bottom;
@@ -258,8 +259,8 @@ main {
     width: 100vw;
     min-height: 18em;
     /* height: 500px; */
-
     position: relative;
+    margin: 1em 0;
     box-sizing: border-box;
     /* display: flex; */
     /* border-bottom: 10px solid #F9C789; */
@@ -276,6 +277,9 @@ main {
 .text {
     margin-left: 31px;
     font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 2em;
 }
 
 .block2-blur{
