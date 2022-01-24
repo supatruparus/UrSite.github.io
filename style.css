@@ -23,7 +23,7 @@
     position: relative;
     background-color: cornflowerblue;
     width: 65%;
-    z-index: -10;
+    z-index: 0;
     overflow: visible;
     min-height: 20em;
     /* height: 100%; */
@@ -270,11 +270,22 @@ main {
 
 
 .text {
-    margin-left: 31px;
+    /* margin-left: 31px; */
     font-size: 1em;
     width: 100%;
     box-sizing: border-box;
     padding-right: 2em;
+}
+.block2{
+    background-image: url(./img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+    
+    
+}
+.block2 .content{
+    background-color: unset;
 }
 .block2 h2{
     text-align: right;
@@ -292,11 +303,10 @@ main {
     left: 0;
     margin: 0 auto;
     width: 100%;
-    color: #BCB4DD;
-    background: rgb(94 83 64 / 12%);
+    color: #140f27da;
+    background: rgb(105 62 172 / 48%);
     backdrop-filter: blur(1.1000000000000012px);
     height: 100%;
-    /* width: 100%; */
 }
 
 .block2-list {
@@ -304,7 +314,7 @@ main {
     z-index: 5;
     margin-left: -1em;
     color: ghostwhite;
-    margin-left: 1.3000000000000003em;
+    /* margin-left: 1.3000000000000003em; */
     /* font-size: medium; */
 }
 
