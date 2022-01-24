@@ -176,11 +176,7 @@ header .phone {
     font-size: 1em;
     font-family: 'Rubik Mono One';
 }
-.triangle-right {
-    border-top: 21px solid transparent;
-    border-bottom: 21px solid transparent;
-    border-left: 30px solid #9400DDD4;
-}
+
 
 .header {
     top: 65px;
@@ -310,68 +306,10 @@ main {
     color: white;
 }
 
-.block2-arrow {
-    display: flex;
-    z-index: -1;
-    margin-left: -3;
-    justify-content: space-between;
-    align-items: center;
-    /* margin-top: 0px; */
-    width: 62%;
-    position: absolute;
-    /* top: 0px; */
-    /* top: 2.7755575615628914e-17em; */
-    max-width: 400px;
-    min-width: 301px;
-    left: -1em;
-    margin-top: 0.5em;
-    background-color: #F9C789;
-    height: 1.0em;
-    font-size: 1.1em;
-}
-
-.block2-circle {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3em;
-    width: 3em;
-    background-image: url('./img/handcuffs.png');
-    background-size: 70% 70%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #F9C789;
-    background-clip: padding-box;
-    border-radius: 50%;
-    margin-left: -25px;
-    border-right-color: transparent;
-    border-right-width: 1px;
-}
-
-.block2-circle:after {
-    content: '';
-    display: block;
-    z-index: -1;
-    background: #21005870;
-    width: 115%;
-    height: 115%;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.block2-arrow-triangle-right {
-    width: 0px;
-    height: 0px;
-    border-top: 0.55em solid transparent;
-    border-bottom: 0.55em solid transparent;
-    border-left: 20px solid #F9C789;
-    margin-right: -20px;
-}
 
 
 
-}
+
 
 
 
