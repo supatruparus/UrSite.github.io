@@ -22,7 +22,7 @@
 .content {
     position: relative;
     background-color: cornflowerblue;
-    width: 55%;
+    width: 63%;
     z-index: 0;
     overflow: visible;
     min-height: 20em;
@@ -244,7 +244,7 @@ header .phone {
 }
 
 main {
-    margin-top: 5em;
+    margin-top: 100px;
 }
 
 .block {
