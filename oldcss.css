@@ -121,13 +121,10 @@ header .phone {
 }
 
 .phone-number {
-    /* margin: 3px; */
-    /* margin-left: 5px; */
     font-size: large;
     color: antiquewhite;
     font-family: 'Rubik Mono One', sans-serif;
     flex: 3.5;
-    /* display: inline-block; */
     text-align: center;
     align-items: center;
     padding: 0.5999999999999973em 0 0 0;
