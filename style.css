@@ -22,11 +22,11 @@
 .content {
     position: relative;
     background-color: cornflowerblue;
-    width: 65%;
+    width: 55%;
     z-index: 0;
     overflow: visible;
     min-height: 20em;
-    /* height: 100%; */
+    height: 35em;
     /* font-size: 3em; */
     margin: 0 auto;
     padding-top: 0.3em;
@@ -42,9 +42,7 @@
 h1 {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    height: 30%;
     max-width: 55%;
-    padding-left: 5%;
 }
 
 h2 {
@@ -52,7 +50,8 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.7em;
-    margin-bottom:0 4vw;
+    margin-bottom: 0.1em;
+    z-index: 20;
     
 }
 
@@ -61,7 +60,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.5em;
-    margin-top: 0em;
+    margin-top: 0px;
     
 }
 
@@ -76,7 +75,7 @@ h3 {
     /* height: auto; */
     /* margin: 0 auto; */
     /* overflow: overlay; */
-    background-size: auto 100%;
+    background-size: auto 80%;
     background-color: black;
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -252,7 +251,8 @@ main {
     /* padding-top: -10em; */
     /* font-size: 0.6em; */
     width: 100vw;
-    min-height: 18em;
+    height:32em;
+    overflow: hidden;
     /* height: 500px; */
     position: relative;
     margin: 1em 0;
@@ -291,7 +291,7 @@ main {
     color:midnightblue;
     position: absolute;
     right: 1em;
-    top: 10.100000000000003em;
+    top: 13em;
     z-index: 1;
     width: min-content;
     text-align: right;
@@ -303,15 +303,17 @@ main {
     display: block;
     margin-right: 0.9em;
 }
-.block2 #molot{
-    position: absolute;
-    right: 5em;
-    bottom: -15%;
-    /* height: 60%; */
-    max-height: 20em;
-    width: 30%;
-    right: 0px;
-}
+
+    .block2 #molot {
+        position: absolute;
+        bottom: -20%;
+        /* right: 10px; */
+        /* height: 60%; */
+        max-height: 20em;
+        width: 30%;
+        right: 50px;
+    }
+
 .block2 h2{
     text-align: right;
     color: #aca5d7;
@@ -364,7 +366,7 @@ main {
     
 }
 .adventages .adv_list{
-    margin: 4em 0 0;
+    margin: 4px 0 0;
     width: 100%;
     min-height: 400px;
     display: flex;
@@ -377,7 +379,7 @@ main {
     position: relative;
     flex-direction: column-reverse;
     display: flex;
-    width: 10em;
+    width: min(10em, 20vw);
     height: 20em;
     
 }
@@ -409,7 +411,11 @@ main {
     background-color: #594aaf;
 
 }
-
+.feedback{
+    background-image: url('./img/4.jpg');
+    background-size: cover;
+    
+}
 
 
 
