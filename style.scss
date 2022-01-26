@@ -9,7 +9,7 @@
 //     font-family: 'Rubik Mono One';
 //     font-weight:500;
 // }
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat:wght@200&family=Open+Sans:wdth,wght@96.5,800&family=Raleway:wght@228&family=Roboto:wght@300&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat:wght@200,100,300,400,500,600&family=Open+Sans:wdth,wght@96.5,800&family=Raleway:wght@228&family=Roboto:wght@300&family=Rubik+Mono+One&display=swap');
 @keyframes opacity{
     0% {
         opacity:1;
@@ -22,7 +22,25 @@ $arrowHeight: 1.6em;
 $arrowWidth: 20em;
 $arrow-color: #c69c6d;
 $leftpadding: 70px;
+$padding-right:20px;
 $content-width:63%;
+$font-default: 'Montserrat', sans-serif;
+%flex-col{
+    display: flex;
+    flex-direction: column;
+}
+%title{
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+%arrow{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    max-width: 50%;
+}
 
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -33,7 +51,8 @@ h1 {
 h2 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: 1.7em;
+    font-size: 3.5em;
+    font-weight: 200;
     margin-bottom: 0.1em;
     z-index: 20;
     
@@ -49,10 +68,11 @@ h3 {
 }
 h4{
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1.1em;
 }
+
 body{
-    font-size: 16px;
+    font-size: 18px;
     color: #d0d0d0;
     background-color: black;
     background-image: url(./img/back.png);
@@ -120,6 +140,10 @@ body{
             }
         }
         .header{
+            font-family: $font-default;
+            color: $arrow-color;
+            font-weight: 200;
+            text-transform: uppercase;
             display: flex;
             height: 75px;
             background-size: 100% 100%;
@@ -236,13 +260,9 @@ body{
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
                     height: 67px;
-                    max-width: 52%;
-                    box-sizing: border-box;
+                    @extend %arrow;
                     padding: 1em 0 0 1em;
                     margin: 2em 0 2em 0.1em;
-                    font-size: 1.2em;
-                    font-family: 'Rubik Mono One';
-                    font-weight:500;
                 }
             }
         }
@@ -259,6 +279,7 @@ body{
                 background-color: transparent;
                 box-sizing: border-box;
                 padding-left: $leftpadding;
+                padding-right: $padding-right;
             }
             h2{
                 text-align: right;
@@ -271,17 +292,17 @@ body{
                 text-shadow: 0.04em 0.06em #594aaf;
             }
             #registration{
-                font-size: 0.7em;
                 font-weight:bolder;
                 color:midnightblue;
                 position: absolute;
-                right: 1em;
-                top: 13em;
+                right: 30px;
+                top: 12.5em;
                 z-index: 1;
-                width: min-content;
                 text-align: right;
                 img{
                     height: 4.9em;
+                    width: 27em;
+                    object-position: right;
                 }
                 p2{
                 display: block;
@@ -310,70 +331,87 @@ body{
                 height: 100%;
             }
             .block2-list {
+
                 margin-top: 60px;
                 z-index: 5;
-                margin-left: -1em;
                 color: ghostwhite;
-                font-size: 1.1em;
-                font-weight: 700;
-
-            }
-            .block2-list2 {
-                margin-left: 0px;
-                list-style: none;
-                font-size: 1.2em;
-                line-height: 1.6em;
-                color: white;
-                text-transform: uppercase;
-                .selection-arrow{
-                    left:  - $leftpadding;
-                    position: absolute;
-                    display: flex;
-                    justify-content: flex-start;
-                    width: 500px;
-                    height: $arrowHeight;
-                    .circle{
-                        z-index: -1;
-                        position: relative;
-                        background-color: $arrow-color;
-                        border-radius: 50%;
-                        height: $arrowHeight * 3;
-                        width: $arrowHeight * 3;
-                        &:before{
+                font-size: 1.5em;
+                font-weight: 300;
+                .block2-list1{
+                    margin-left:1em;
+                }
+                .block2-list2 {
+                    margin-left: 0px;
+                    list-style: none;
+                    font-size: 1.2em;
+                    line-height: 1.6em;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    .selection-arrow{
+                        left:  - $leftpadding;
+                        position: absolute;
+                        display: flex;
+                        justify-content: flex-start;
+                        width: 500px;
+                        height: $arrowHeight;
+                        .circle{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             z-index: -1;
+                            position: relative;
                             background-color: $arrow-color;
-                            position: absolute;
-                            top: $arrowHeight;
-                            left: $arrowHeight;
-                            content: '';
-                            display: block;
-                            width: $arrowWidth;
-                            height: $arrowHeight;
-
+                            border-radius: 50%;
+                            height: $arrowHeight * 3;
+                            width: $arrowHeight * 3;
+                            &>img{
+                                width: 70%;
+                                height: auto;
+                            }
+                            &:before{
+                                z-index: -1;
+                                background-color: $arrow-color;
+                                position: absolute;
+                                top: $arrowHeight;
+                                left: $arrowHeight;
+                                content: '';
+                                display: block;
+                                width: $arrowWidth;
+                                height: $arrowHeight;
+    
+                            }
+                            &:after{
+                                content: '';
+                                
+                                display: inline-block;
+                                position: absolute;
+                                top: $arrowHeight;
+                                left: $arrowWidth + $arrowHeight;
+                                width: 0;
+                                height: 0;
+                                border-top: solid transparent $arrowHeight / 2;
+                                border-bottom: solid transparent $arrowHeight / 2;
+                                border-left: solid $arrow-color $arrowHeight;
+    
+                            }
+    
                         }
-                        &:after{
-                            content: '';
-                            
-                            display: inline-block;
-                            position: absolute;
-                            top: $arrowHeight;
-                            left: $arrowWidth + $arrowHeight;
-                            width: 0;
-                            height: 0;
-                            border-top: solid transparent $arrowHeight / 2;
-                            border-bottom: solid transparent $arrowHeight / 2;
-                            border-left: solid $arrow-color $arrowHeight;
-
-                        }
-
                     }
+    
                 }
 
             }
+
         }
         .adventages{
             .content{
+                box-sizing: border-box;
+                padding-top: 0px;
                 background-color: transparent;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -387,16 +425,15 @@ body{
                 justify-content: space-evenly;
                 align-items: flex-end;
                 .flexlist-elem{
-                    position: relative;
+                    position: static;
                     flex-direction: column-reverse;
                     display: flex;
-                    width: min(10em, 20vw);
-                    height: 20em;
+                    width: 23%;
                     .flexlist-elem-text{
                         display:flex;
                         flex-direction: column;
                         flex-basis: content;
-                        font-size: x-small;
+                        font-size: 1.1em;
                         box-sizing: border-box;
                         text-align: center;
                         padding: 3px ;
@@ -406,6 +443,7 @@ body{
                         min-height: 24em;
                         height: max-content;
                         background-color: #594aaf;
+
                     
                     }
                     .flexlist-icon{
@@ -413,7 +451,7 @@ body{
                         flex-direction: column;
                         justify-content: flex-end;
                         object-position: center bottom;
-                        width: 70%;
+                        width: 50%;
                         margin: 0 auto 1em;
                         
                     }
