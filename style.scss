@@ -175,9 +175,9 @@ body{
         margin-top: 15px;
         position: relative;
         width: inherit;
+     
         .block{
             width: 100vw;
-            height:32em;
             overflow: hidden;
             position: relative;
             margin: 1em 0;
@@ -199,6 +199,10 @@ body{
                 box-sizing: border-box;
                 background-position: right;
                 background-repeat: no-repeat;
+                @media screen and (max-width:1000px) {
+                    width: auto;
+                }
+
             }
         }
         .block1{
@@ -206,9 +210,9 @@ body{
             box-shadow: 2px red;
             #persefona{
                 position: absolute;
-                right: -205px;
-                top: -271px;
-                width: 140%;
+                z-index: -1;
+                right: -199px;
+                top: -258px;
             }
             .text{
                 font-size: 1em;
