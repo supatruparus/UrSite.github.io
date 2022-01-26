@@ -18,6 +18,12 @@
         opacity:0;
     }
 }
+$arrowHeight: 1.6em;
+$arrowWidth: 20em;
+$arrow-color: #c69c6d;
+$leftpadding: 70px;
+$content-width:63%;
+
 h1 {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -64,6 +70,9 @@ body{
         top: 0px;
         width: 63%;
         flex-direction: column;
+        @media (max-width:1000px) {
+            width: auto;
+        }
         .top-blur{
             z-index: -1;
             width: 100%;
@@ -244,7 +253,13 @@ body{
             z-index: -10;
             overflow: hidden;
             height: auto;
-            .content{background-color: transparent;}
+            box-sizing: border-box;
+
+            .content{
+                background-color: transparent;
+                box-sizing: border-box;
+                padding-left: $leftpadding;
+            }
             h2{
                 text-align: right;
                 color: #aca5d7;
@@ -299,18 +314,61 @@ body{
                 z-index: 5;
                 margin-left: -1em;
                 color: ghostwhite;
-                margin-left: 2.4000000000000026em;
                 font-size: 1.1em;
                 font-weight: 700;
+
             }
             .block2-list2 {
+                margin-left: 0px;
                 list-style: none;
-                position: relative;
                 font-size: 1.2em;
-                top: -0.7000000000000001em;
-                margin-top: 3px;
+                line-height: 1.6em;
                 color: white;
                 text-transform: uppercase;
+                .selection-arrow{
+                    left:  - $leftpadding;
+                    position: absolute;
+                    display: flex;
+                    justify-content: flex-start;
+                    width: 500px;
+                    height: $arrowHeight;
+                    .circle{
+                        z-index: -1;
+                        position: relative;
+                        background-color: $arrow-color;
+                        border-radius: 50%;
+                        height: $arrowHeight * 3;
+                        width: $arrowHeight * 3;
+                        &:before{
+                            z-index: -1;
+                            background-color: $arrow-color;
+                            position: absolute;
+                            top: $arrowHeight;
+                            left: $arrowHeight;
+                            content: '';
+                            display: block;
+                            width: $arrowWidth;
+                            height: $arrowHeight;
+
+                        }
+                        &:after{
+                            content: '';
+                            
+                            display: inline-block;
+                            position: absolute;
+                            top: $arrowHeight;
+                            left: $arrowWidth + $arrowHeight;
+                            width: 0;
+                            height: 0;
+                            border-top: solid transparent $arrowHeight / 2;
+                            border-bottom: solid transparent $arrowHeight / 2;
+                            border-left: solid $arrow-color $arrowHeight;
+
+                        }
+
+                    }
+                }
+
             }
         }
         .adventages{
