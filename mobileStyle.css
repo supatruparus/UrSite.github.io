@@ -1,0 +1,29 @@
+@media screen and (max-width: 700px) {
+    header {
+        position: static;
+        height: 6em;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .content {
+        margin:0 5px;
+        width:auto;
+        min-width: 0;
+    }
+    .top-blur{
+        display:none;
+
+    }
+    .text{
+        margin-left: 0;
+        width: 100%;
+    }
+    main {
+    margin-top: 2em;
+    padding-left: 0em;
+    width:100vw;
+}
+
+}
