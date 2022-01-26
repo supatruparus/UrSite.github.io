@@ -18,8 +18,9 @@
         opacity:0;
     }
 }
-$arrowHeight: 1.6em;
-$arrowWidth: 20em;
+// $arrowWidth: 20em;
+$arrowHeight: 70px;
+$arrowWidth: 300px;
 $arrow-color: #c69c6d;
 $leftpadding: 70px;
 $padding-right:20px;
@@ -47,17 +48,17 @@ $font-default: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.1em;
 }
-%arrow{
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    max-width: 50%;
-    @media screen and (max-width:768px) {
-        width: 85%;
-    }
-}
+// %arrow{
+//     box-sizing: border-box;
+//     font-family: 'Montserrat', sans-serif;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     font-size: 1.2em;
+//     max-width: 50%;
+//     @media screen and (max-width:768px) {
+//         width: 85%;
+//     }
+// }
 
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -87,6 +88,24 @@ h4{
     text-transform: uppercase;
     font-size: 1.1em;
 }
+// #registration{
+//     color:midnightblue;
+//     position: absolute;
+//     right: 30px;
+//     top: 12.5em;
+//     z-index: 1;
+//     height: 120px;
+//     text-align: right;
+//     img{
+//         height: 100%;
+//         width: 27em;
+//         object-position: right;
+//     }
+//     p2{
+//     display: block;
+//     margin-right: 0.9em;
+//     }
+// }
 .content {
     position: relative;
     background-color: cornflowerblue;
@@ -123,6 +142,14 @@ h4{
         font-size: small;
     }
 
+}
+.arrow{
+    background-image: url('./img/arrow.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 70px;
+    padding: 1em 0 0 1em;
+    margin: 2em 0 2em 0.1em;
 }
 .block{
     width: 100vw;
@@ -368,9 +395,7 @@ body{
     }
     main {
         margin-top: 150px;
-        position: relative;
-        width: inherit;
-     
+        position: relative;     
 
         .block1{
             border-bottom: 35px solid #c69c6d9d;
@@ -388,17 +413,6 @@ body{
                 padding-right: 2em;
             }
 
-
-            .arrow{
-                    background-image: url('./img/arrow.png');
-                    background-repeat: no-repeat;
-                    background-size: 100% 100%;
-                    height: $arrowHeight;
-                    padding: 1em 0 0 1em;
-                    margin: 2em 0 2em 0.1em;
-                    @extend %arrow;
-            }
-            
         }
         .block2{
             background-image: url(./img/bg2.png);
@@ -417,25 +431,6 @@ body{
                 text-align: right;
                 color: #aca5d7;
                 text-shadow: 0.04em 0.06em #594aaf;
-            }
-            #registration{
-                font-weight:bolder;
-                color:midnightblue;
-                position: absolute;
-                right: 30px;
-                top: 12.5em;
-                z-index: 1;
-                height: $arrowHeight;
-                text-align: right;
-                img{
-                    height: 100%;
-                    width: 27em;
-                    object-position: right;
-                }
-                p2{
-                display: block;
-                margin-right: 0.9em;
-                }
             }
             #molot {
                 position: absolute;
@@ -472,7 +467,7 @@ body{
                     margin-left: 0px;
                     list-style: none;
                     font-size: 1.2em;
-                    line-height: 1.6em;
+                    line-height: 1.7em;
                     color: white;
                     text-transform: uppercase;
                     font-weight: 700;
@@ -530,7 +525,6 @@ body{
                 }
 
             }
-
         }
     }
         .adventages{
