@@ -61,7 +61,7 @@ $font-default: 'Montserrat', sans-serif;
     min-width: 15em;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
     font-size: 1.1em;
     padding:0 20px;
 }
@@ -255,7 +255,15 @@ h4{
 }
 
 
-
+.header-top{
+    width: $content-width;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding:3p 5px 6px 0;
+}
 body{
     font-size: 16px;
     color: #d0d0d0;
@@ -266,7 +274,6 @@ body{
     flex-direction: column;
     align-content: space-around;
     font-family: 'Montserrat', sans-serif;
-
     .top-container{
         position: fixed;
         z-index: 999;
@@ -375,10 +382,6 @@ body{
                 background-color: #48006CD1;
             }
     }
-    
-        
-    
-    
     }
 main {
         margin-top: 150px;
@@ -534,6 +537,4 @@ main {
 
     }
     }
-
-
 }
