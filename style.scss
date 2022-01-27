@@ -18,9 +18,9 @@
         opacity:0;
     }
 }
-// $arrowWidth: 20em;
-$arrowHeight: 70px;
-$arrowWidth: 300px;
+// $selection-arrow-width: 20em;
+$selection-arrow-height: 70px;
+$selection-arrow-width: 300px;
 $arrow-color: #c69c6d;
 $darkblueColor:#594aaf;
 $leftpadding: 70px;
@@ -94,7 +94,56 @@ h4{
     text-transform: uppercase;
     font-size: 1.1em;
 }
+.selection-arrow{
+    left:  - $leftpadding;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+    height: $selection-arrow-height;
+    .circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+        position: relative;
+        background-color: $arrow-color;
+        border-radius: 50%;
+        height: $selection-arrow-height * 3;
+        width: $selection-arrow-height * 3;
+        &>img{
+            width: 70%;
+            height: auto;
+        }
+        &:before{
+            z-index: -1;
+            background-color: $arrow-color;
+            position: absolute;
+            top: $selection-arrow-height;
+            left: $selection-arrow-height;
+            content: '';
+            display: block;
+            width: $selection-arrow-width;
+            height: $selection-arrow-height;
 
+        }
+        &:after{
+            content: '';
+            
+            display: inline-block;
+            position: absolute;
+            top: $selection-arrow-height;
+            left: $selection-arrow-width + $selection-arrow-height;
+            width: 0;
+            height: 0;
+            border-top: solid transparent $selection-arrow-height / 2;
+            border-bottom: solid transparent $selection-arrow-height / 2;
+            border-left: solid $arrow-color $selection-arrow-height;
+
+        }
+
+    }
+}
 .content {
     position: relative;
     background-color: transparent;
@@ -457,56 +506,7 @@ main {
                     color: white;
                     text-transform: uppercase;
                     font-weight: 700;
-                    .selection-arrow{
-                        left:  - $leftpadding;
-                        position: absolute;
-                        display: flex;
-                        justify-content: flex-start;
-                        width: 500px;
-                        height: $arrowHeight;
-                        .circle{
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            z-index: -1;
-                            position: relative;
-                            background-color: $arrow-color;
-                            border-radius: 50%;
-                            height: $arrowHeight * 3;
-                            width: $arrowHeight * 3;
-                            &>img{
-                                width: 70%;
-                                height: auto;
-                            }
-                            &:before{
-                                z-index: -1;
-                                background-color: $arrow-color;
-                                position: absolute;
-                                top: $arrowHeight;
-                                left: $arrowHeight;
-                                content: '';
-                                display: block;
-                                width: $arrowWidth;
-                                height: $arrowHeight;
-    
-                            }
-                            &:after{
-                                content: '';
-                                
-                                display: inline-block;
-                                position: absolute;
-                                top: $arrowHeight;
-                                left: $arrowWidth + $arrowHeight;
-                                width: 0;
-                                height: 0;
-                                border-top: solid transparent $arrowHeight / 2;
-                                border-bottom: solid transparent $arrowHeight / 2;
-                                border-left: solid $arrow-color $arrowHeight;
-    
-                            }
-    
-                        }
-                    }
+
     
                 }
 
