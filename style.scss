@@ -99,7 +99,7 @@ h4{
 }
 .selection-arrow{
     left: 0px;
-    top:0px;
+    top:- $selection-arrow-height;
     position: absolute;
     display: flex;
     justify-content: flex-start;
