@@ -111,8 +111,7 @@ header {
     justify-content: flex-end;
 }
 
-header 
-.phone {
+header .phone {
  
     display: flex;
     margin-bottom: 1px;
@@ -120,6 +119,7 @@ header
     height: 48px;
     border: 1px solid #F9C789;
 }
+
 .phone-number {
     font-size: large;
     color: antiquewhite;
