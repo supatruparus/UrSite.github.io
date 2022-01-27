@@ -105,6 +105,7 @@ h4{
     justify-content: flex-start;
     width: 500px;
     height: $selection-arrow-height;
+    left: - $leftpadding - $selection-arrow-height;
     .circle{
         display: flex;
         align-items: center;
