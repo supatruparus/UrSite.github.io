@@ -19,7 +19,7 @@ $padding-right:20px;
 $content-width:60%;
 $font-default: 'Montserrat', sans-serif;
 $arrow-Color:rgb(231, 206, 63);
-$feedback__text: 0.8em;
+$feedback__text: 0.75em;
 %title--gold{
     color: $arrow-Color;
     font-family: 'Montserrat', sans-serif;
@@ -197,7 +197,7 @@ h4{
     position: relative;
     margin: 1em 0;
     box-sizing: border-box;
-    min-height: 700px;
+    min-height: 300px;
     background-size: 100% auto;
     background-repeat: no-repeat;
 
@@ -550,18 +550,26 @@ body{
                     margin-right: -90px;
                 }
                 .feedback-elem__background{
+                    position: relative;
                     z-index: -1;
                     border-top: 133px solid blue;
                     border-left: 335px solid blue;
                     border-right: 57px solid transparent;
+
                 }
                 .feedback-elem__text{
                     position: absolute;
-                    right:10px;
-                    top:0px;
+                    right:56px;
+                    top:20px;
                     font-size: $feedback__text;
+                    width: 240px;
 
                 }
+                .feedback-elem__info{
+                    position: relative;
+
+                }
+
 
             }
         }
@@ -570,4 +578,30 @@ body{
     background-image: url('./img/4.jpg');
     @extend %block-background;
 
+}
+.feedback-elem--reverse{
+    flex-direction: row-reverse;
+}
+.feedback-elem__photo--reverse{
+    background-image: url(./img/feedback__photo.png);
+    height: 180px;
+    width: 180px;
+    margin-right: 0px;
+    
+
+}
+.feedback-elem__background--reverse{
+    position: relative;
+    z-index: -1;
+    margin-right: -90px;
+    border-top: 133px solid blue;
+    border-left: 57px solid transparent;
+    border-right: 335px solid blue;
+}
+.feedback-elem__text--reverse{
+    position: absolute;
+    right:0px;
+    top:10px;
+    font-size: $feedback__text;
+    width: 240px;
 }
