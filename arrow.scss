@@ -1,5 +1,6 @@
-$arrow-width: 500px;
-$arrow-height: 40px;
+$arrow-width: 100%;
+$arrow-height: 1.4em;
+$top: ($arrow-height - 1em)/4;
 $arrow__circle-width: 80px;
 $arrow-Color: #cfaa42;
 $arrow-img: url(./img/handcuffs.png);
@@ -12,6 +13,9 @@ $arrow-img: url(./img/handcuffs.png);
     width: $arrow-width;
     align-items: center;
     position: absolute;
+    top: 0;
+    left: - $arrow__circle-width/3 *2;
+    z-index: -1;
 
     .selection-arrow__circle{
         background-image: $arrow-img;
@@ -33,5 +37,6 @@ $arrow-img: url(./img/handcuffs.png);
         border-left: $arrow-height solid $arrow-Color;
         position: absolute;
         left: $arrow-width;
+        z-index: -1;
     }
 }

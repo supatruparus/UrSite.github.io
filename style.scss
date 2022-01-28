@@ -11,13 +11,39 @@
 }
 // $selection-arrow-width: 20em;
 $selection-arrow-height: 40px;
-$selection-arrow-width: 600px;
+$selection-arrow-width: 400px;
 $arrow-color: #c69c6d;
 $darkblueColor:#594aaf;
 $leftpadding: 70px;
 $padding-right:20px;
-$content-width:810px;
+$content-width:60%;
 $font-default: 'Montserrat', sans-serif;
+$arrow-Color:rgb(231, 206, 63);
+%title--gold{
+    color: $arrow-Color;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 200;
+    margin-bottom: 0.1em;
+    z-index: 20;
+}
+%title--white{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.2em;
+    font-weight: 200;
+    margin-bottom: 0.1em;
+    z-index: 20;
+}
+%block-background{
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+%block{
+    min-width: 500px;
+}
 %adaptive-widht{
     @media screen and (max-width:1140px) {
         width: 68%;
@@ -56,7 +82,14 @@ $font-default: 'Montserrat', sans-serif;
     font-size: 1.1em;
     padding:0 20px;
 }
-
+.title--white{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 100;
+    margin-bottom: 0.1em;
+    z-index: 20;
+}
 h1 {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -66,7 +99,7 @@ h1 {
 h2 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: 200;
     margin-bottom: 0.1em;
     z-index: 20;
@@ -87,6 +120,8 @@ h4{
 }
 .selection{
     position:relative;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -100,7 +135,7 @@ h4{
     overflow: visible;
     min-height: 20em;
     display: flex;
-    height: auto;
+    height: 100%;
     margin: 0 auto;
     padding-top: 0.3em;
     padding-right: 1em;
@@ -128,7 +163,9 @@ h4{
 
 }
 .left-content{
+    display: inline;
     float:left;
+    width: 50%;
 }
 .arrow-right{
     background-image: url('./img/arrow.png');
@@ -144,9 +181,6 @@ h4{
 }
 #registration{
     float: right;
-    position: absolute;
-    right: $padding-right;
-    margin-top: 267px;
     width: min-content;
     p{
         
@@ -162,9 +196,19 @@ h4{
     position: relative;
     margin: 1em 0;
     box-sizing: border-box;
+    min-height: 700px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 
 }
 
+.right-content{
+    margin-top: 50px;
+    float: right;
+    width: max-content;
+    display: flex;
+
+}
 .flexrow__elem{
     position: static;
     flex-direction: column-reverse;
@@ -378,7 +422,8 @@ body{
             }
     }
     }
-main {
+
+.main-content {
         margin-top: 150px;
         position: relative;     
         .block1{
@@ -397,9 +442,6 @@ main {
         }
         .block2{
             background-image: url(./img/bg2.png);
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-            background-position: center;
             z-index: -10;
             overflow: hidden;
             height: auto;
@@ -416,12 +458,11 @@ main {
             }
             #molot {
                 position: absolute;
-                bottom: -20%;
-                /* right: 10px; */
-                /* height: 60%; */
-                max-height: 20em;
-                width: 30%;
-                right: 50px;
+                bottom: -80px;
+                z-index: -1;
+                max-height: 50%;
+                height: 50%;
+                right: -22%;
             }
             .block2-blur{
                 position: absolute;
@@ -446,6 +487,7 @@ main {
                     margin-left:1em;
                 }
                 .block2-list2 {
+                    $list2fontsize:1.2em;
                     margin-left: 0px;
                     list-style: none;
                     line-height: 1.7em;
@@ -453,6 +495,8 @@ main {
                     text-transform: uppercase;
                     font-weight: 700;
                     display: block;
+
+                    
                 }
 
             }
@@ -475,12 +519,12 @@ main {
 
 
         }
-        .feedback{
-            background-image: url('./img/4.jpg');
-            background-size: cover;
-            
-        }
+
 
     }
     }
+}
+.feedback{
+    background-image: url('./img/4.jpg');
+    @extend %block-background;
 }
