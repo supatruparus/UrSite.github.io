@@ -1,14 +1,5 @@
-// %arrow{
-//     background-repeat: no-repeat;
-//     height: 67px;
-//     max-width: 52%;
-//     box-sizing: border-box;
-//     padding: 1em 0 0 1em;
-//     margin: 2em 0 2em 0.1em;
-//     font-size: 1.2em;
-//     font-family: 'Rubik Mono One';
-//     font-weight:500;
-// }
+@use 'arrow';
+
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat:wght@200,100,300,400,500,600&family=Open+Sans:wdth,wght@96.5,800&family=Raleway:wght@228&family=Roboto:wght@300&family=Rubik+Mono+One&display=swap');
 @keyframes opacity{
     0% {
@@ -97,56 +88,8 @@ h4{
 .selection{
     position:relative;
 }
-.selection-arrow{
-    left: 0px;
-    top:- $selection-arrow-height;
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    width: 500px;
-    height: $selection-arrow-height;
-    left: - $leftpadding - $selection-arrow-height;
-    .circle{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: -1;
-        position: relative;
-        background-color: $arrow-color;
-        border-radius: 50%;
-        height: $selection-arrow-height * 2;
-        width: $selection-arrow-height * 2;
-        &>img{
-            width: 70%;
-            height: auto;
-        }
-        &:before{
-            z-index: -1;
-            background-color: $arrow-color;
-            position: absolute;
-            left: $selection-arrow-height;
-            content: '';
-            display: block;
-            width: $selection-arrow-width;
-            height: $selection-arrow-height;
 
-        }
-        &:after{
-            content: '';
-            
-            display: inline-block;
-            position: absolute;
-            top: $selection-arrow-height;
-            left: $selection-arrow-width + $selection-arrow-height;
-            width: 0;
-            height: 0;
-            border-top: solid transparent $selection-arrow-height / 2;
-            border-bottom: solid transparent $selection-arrow-height / 2;
-            border-left: solid $arrow-color $selection-arrow-height;
 
-        }
-    }
-}
 .content {
     position: relative;
     background-color: transparent;
@@ -509,8 +452,7 @@ main {
                     color: white;
                     text-transform: uppercase;
                     font-weight: 700;
-
-    
+                    display: block;
                 }
 
             }
