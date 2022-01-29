@@ -20,6 +20,7 @@ $content-width:60%;
 $font-default: 'Montserrat', sans-serif;
 $arrow-Color:rgb(231, 206, 63);
 $feedback__text: 0.75em;
+$feedback__elem-background: #241d49f1;
 %title--gold{
     color: $arrow-Color;
     font-family: 'Montserrat', sans-serif;
@@ -423,24 +424,25 @@ body{
             }
     }
     }
+    #persefona{
+        position: absolute;
+        z-index: -1;
+        right: -199px;
+        top: -258px;
+    }
+    .text{
+        width: 58%;
+        box-sizing: border-box;
+    }
+    .block1{
+        border-bottom: 35px solid #c69c6d9d;
+        box-shadow: 2px red;
 
+    }
 .main-content {
         margin-top: 150px;
         position: relative;     
-        .block1{
-            border-bottom: 35px solid #c69c6d9d;
-            box-shadow: 2px red;
-            #persefona{
-                position: absolute;
-                z-index: -1;
-                right: -199px;
-                top: -258px;
-            }
-            .text{
-                width: 58%;
-                box-sizing: border-box;
-            }
-        }
+
         .block2{
             background-image: url(./img/bg2.png);
             z-index: -10;
@@ -525,67 +527,56 @@ body{
     }
     }
 }
+.feedback-elems{
+    margin: 0 auto;
+    width: 650px;
+    min-height: 500px;
 
+}
+.feedback-elem{
+    display: flex;
+    height: max-content;
+    align-items: center;
+    position: relative;
+    height: 135px;
+}
+.feedback-elem__photo{
+    background-image: url(./img/feedback__photo.png);
+    height: 180px;
+    width: 180px;
+    margin-right: -90px;
+    background-size: cover;
+}
+.feedback-elem__background{
+    position: relative;
+    z-index: -1;
+    border-top: 133px solid $feedback__elem-background;
+    border-left: 335px solid $feedback__elem-background;
+    border-right: 57px solid transparent;
+    background-blend-mode: screen;
+
+}
+.feedback-elem__text{
+    position: absolute;
+    right:56px;
+    top:20px;
+    font-size: $feedback__text;
+    width: 240px;
+
+}
+.feedback-elem__info{
+    position: relative;
+
+}
 .feedback{
-    .content{
-        .feedback-elems{
-            margin: 0 auto;
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: auto;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 650px;
-            min-height: 500px;
-            .feedback-elem{
-                display: flex;
-                height: max-content;
-                align-items: center;
-                position: relative;
-                .feedback-elem__photo{
-                    background-image: url(./img/feedback__photo.png);
-                    height: 180px;
-                    width: 180px;
-                    margin-right: -90px;
-                }
-                .feedback-elem__background{
-                    position: relative;
-                    z-index: -1;
-                    border-top: 133px solid blue;
-                    border-left: 335px solid blue;
-                    border-right: 57px solid transparent;
-
-                }
-                .feedback-elem__text{
-                    position: absolute;
-                    right:56px;
-                    top:20px;
-                    font-size: $feedback__text;
-                    width: 240px;
-
-                }
-                .feedback-elem__info{
-                    position: relative;
-
-                }
-
-
-            }
-        }
-
-    }
     background-image: url('./img/4.jpg');
     @extend %block-background;
-
 }
 .feedback-elem--reverse{
     flex-direction: row-reverse;
 }
 .feedback-elem__photo--reverse{
-    background-image: url(./img/feedback__photo.png);
-    height: 180px;
-    width: 180px;
+    @extend .feedback-elem__photo;
     margin-right: 0px;
     
 
@@ -594,14 +585,14 @@ body{
     position: relative;
     z-index: -1;
     margin-right: -90px;
-    border-top: 133px solid blue;
+    border-top: 133px solid $feedback__elem-background;
     border-left: 57px solid transparent;
-    border-right: 335px solid blue;
+    border-right: 335px solid $feedback__elem-background;
 }
 .feedback-elem__text--reverse{
+    @extend .feedback-elem__text;
     position: absolute;
     right:0px;
-    top:10px;
     font-size: $feedback__text;
     width: 240px;
 }
