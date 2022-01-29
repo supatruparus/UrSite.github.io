@@ -196,7 +196,7 @@ h4{
     position: relative;
     margin: 1em 0;
     box-sizing: border-box;
-    min-height: 300px;
+    min-height: 512px;
     background-size: 100% auto;
     background-repeat: no-repeat;
     @media screen and (max-width:1140px){
@@ -611,7 +611,9 @@ body{
     @extend .block;
     overflow: visible;
     background-image: url('./img/map.jpg');
-    height: 500px;
+    height: 620px;
+    background-position: bottom center;
+    background-size: 100% 80%;
 }
 .registration-form{
     box-shadow: $colorBlue 10px 10px;
@@ -623,7 +625,7 @@ body{
     background-color: whitesmoke;
     position: absolute;
     right: 18%;
-    top: -72px;
+    top: 5%;
 }
 .registration-form__title{
     @extend .title--white;
@@ -656,6 +658,21 @@ body{
     color:whitesmoke;
     
     
+}
+.adress{
+    $width: 260px;
+    $height: 180px;
+    box-sizing: border-box;
+    padding: 36px 0 10px 25px;
+    width: $width;
+    height: $height;
+    background-color: opacify($color: $biegeColor, $amount: 0.15);
+    position: absolute;
+    top: 300px;
+    right: 20%;
+}
+.adress__top{
+    margin-bottom: 33px;
 }
 .footer{
     height: 200px;
