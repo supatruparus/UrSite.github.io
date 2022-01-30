@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <title>HTML</title>
-  
+
   <!-- HTML -->
-  
+
 
   <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="./mobileStyle.css"> -->
-  
+
 
 </head>
-
 <body>
-    <div class="wrapperDiv">
+  <div class="top-container">
     <header>
       <div class="header-top">
         <div class="phone">
@@ -26,7 +26,8 @@
           <div class="phone-text">обратный звонок</div>
         </div>
       </div>
-        <div class="header">
+      <div class="header-menu-container">
+        <div class="header-menu">
           <div class="header-leftSide">
             <div class="header-elem">О нас</div>
             <div class="header-elem">Услуги</div>
@@ -41,35 +42,45 @@
             <div class="header-elem">Контакты</div>
           </div>
         </div>
-        <div class="top-blur"></div>
+      </div>
+
+      <div class="top-blur"></div>
     </header>
   </div>
-    <main>
-        <div class="block block1">
-          
-          <div class="block1-content content">
-            <img id="persefona" src="./img/persefona.png">
-            <h1>Юридические <br>услуги</h1>
-            <div class="text">
-              <p> Nostrud voluptate aliqua dolor ullamco Lorem laboris veniam excepteur deserunt dolore elit. Consequat laboris dolor ipsum mollit.</p>
-              <p>   Nostrud voluptate aliqua dolor ullamco Lorem laboris veniam excepteur deserunt dolore elit. Consequat laboris dolor ipsum mollit.</p>
-            </div>
-          
-            <div class="arrow">
-            Проконсультироваться бесплатно
-            </div>
-        </div>
-        </div>
-        <div  class="block block2">
-          <img id= "molot" src="./img/molot.png">
+  <main class="main-content">
+    <div class="block block1">
 
-          
-            <div class="content block2-content">
-          
-            <div class="blur block2-blur"> </div>
-            <h2>Мы работаем</h2><h3>по следующим направлениям</h3>
+      <div class="block1-content content">
+        <img id="persefona" src="./img/persefona.png">
+        <h1>Юридические <br>услуги</h1>
+        <div class="text">
+          <p> Nostrud voluptate aliqua dolor ullamco Lorem laboris veniam excepteur deserunt dolore elit. Consequat
+            laboris dolor ipsum mollit.</p>
+          <p> Nostrud voluptate aliqua dolor ullamco Lorem laboris veniam excepteur deserunt dolore elit. Consequat
+            laboris dolor ipsum mollit.</p>
+        </div>
+
+        <div type="button" class="arrow-right">
+          Проконсультироваться бесплатно
+        </div>
+      </div>
+    </div>
+    <div class="block block2">
+      
+
+
+      <div class="content block2-content">
+        <img id="molot" src="./img/molot.png">
+        <!-- <div class="blur block2-blur"> </div> -->
+        <header>
+          <h2>Мы работаем</h2>
+          <h3>по следующим направлениям</h3>
+        </header>
+        <main class="content__main">
+          <div class="left-content">
             <div class="block2-list">
-              <ul class="block2-list1"><h4>Гражданские дела</h4>
+              <ul class="block2-list1">
+                <h4>Гражданские дела</h4>
                 <li>семейные</li>
                 <li>жилищные</li>
                 <li>земельные</li>
@@ -78,91 +89,176 @@
                 <li>наследственные</li>
                 <li>авторские</li>
               </ul>
-              
-
               <ul class="block2-list2">
-                <div class="selection-arrow">
-                  <div class="circle">
-                    <img id="handcuffs" src="./img/handcuffs.png">
+  
+                <li class="selection">Уголовные дела
+                  <div class="selection-arrow">
+                    <div class="selection-arrow__circle"></div>
+                    <div class="selection-arrow__triangle"></div>
                   </div>
-                  <div class="arrow">
-                    
-                  </div>
-                  
-                 
-                </div>  
-                <li>уголовные дела</li> 
-                
+                </li>
                 <li>арбитражные дела</li>
                 <li>административные дела</li>
                 <li>юридическое сопровождение организаций</li>
                 <li>налоговые споры</li>
                 <li>исполнительное производство</li>
                 <li>профессиональный держатель реестра акционеров</li>
-                <li></li>
-                
               </ul>
-              
-            </div>
-            <div id="registration" class="arrow">
-              <img  src="./img/arrow2.png">
-              <p2>Запишитесь на консультацию у специалиста</p2>
             </div>
             </div>
-          
+            <div class="right-content">          
+              <div id="registration">
+              <div type="button" class="arrow-left">записаться</div>
+              <p>Запишитесь на консультацию у специалиста</p>
+              </div>
+            </div>
+        </main>
+        </div>
+
+
 
         </div>
-        <div class="block adventages">
-          <div class="content adventages-content">
-            <h2>наши преимущества</h2>
-            <div class="adv_list">
-              <div class="flexlist-elem flexlist-elem1">
-                <div class="flexlist-elem-text">
-                  <h4>Профессионализм</h4>
-                  <p>Do aliquip id eiusmod velit ullamco sunt labore. Qui mollit dolore sint aliqua aliqua proident ullamco voluptate ullamco ut in pariatur ullamco ex. Amet magna reprehenderit fugiat tempor pariatur aliquip ipsum do. Duis excepteur adipisicing tempor velit aliquip est ut et ullamco consectetur pariatur sunt Lorem quis. Anim magna dolor duis velit nulla consectetur eiusmod sit.</p>
-                </div>
-                <img class = 'flexlist-icon' src="./img/adv_icon1.png">
-                
-              </div>
-              <div class="flexlist-elem flexlist-elem2">
-                <div class="flexlist-elem-text">
-                  <h4>Надежность</h4>
-                  <p>Elit cillum aute officia dolor qui excepteur. Cillum cupidatat quis minim id elit non eu aute in dolore. Labore sunt in quis laborum et consectetur non sunt enim incididunt elit tempor.</p>
-                </div>
-                <img class = 'flexlist-icon' src="./img/adv_icon2.png">
-                
-              </div>
-              <div class="flexlist-elem flexlist-elem3">
-                <div class="flexlist-elem-text">
-                  <h4>Сроки</h4>
-                  <p>Pariatur cillum dolore eiusmod anim sunt deserunt quis. Dolore incididunt labore qui ut fugiat dolor est ipsum dolore ex sit labore ipsum. Irure aute duis dolore irure voluptate enim duis proident est eiusmod enim. Et ipsum Lorem magna consequat aute. Deserunt mollit in ipsum elit officia anim aliqua do in dolore. Consequat ea qui nisi mollit nostrud ea.</p>
-                </div>
-                <img class= 'flexlist-icon' src="./img/adv_icon3.png">
-                
-              </div>       
-              <div class="flexlist-elem flexlist-elem4">
-                <div class="flexlist-elem-text">
-                  <h4>Выгодная цена</h4>
-                  <p>Cillum officia sunt sunt in qui dolor ad voluptate aliqua qui. Fugiat ullamco esse incididunt ad sunt velit non in veniam. Labore est adipisicing laboris non consequat occaecat sint sint occaecat eu deserunt exercitation. Pariatur sit sunt eu quis nulla ad dolor. Dolore esse excepteur esse incididunt do.</p>
-                  </div>      
-                <img class='flexlist-icon' src="./img/adv_icon4.png">
-                
-              </div>
+      </div>
+    </div>
+    <div class="block adventages">
+      <div class="content adventages-content">
+        <header class="title--white">наши преимущества</header>
+        <div class="adv-list">
+          <div class="flexrow__elem">
+            <div class="flexrow__text">
+              <h4>Профессионализм</h4>
+              <p>Do aliquip id eiusmod velit ullamco sunt labore. Qui mollit dolore sint aliqua aliqua proident ullamco
+                voluptate ullamco ut in pariatur ullamco ex. Amet magna reprehenderit fugiat tempor pariatur aliquip
+                ipsum do. Duis excepteur adipisicing tempor velit aliquip est ut et ullamco consectetur pariatur sunt
+                Lorem quis. Anim magna dolor duis velit nulla consectetur eiusmod sit.</p>
             </div>
-          </div>
-        </div>
-        <div class="block feedback">
-          <div class="content">
+            <img class='flexrow__icon' src="./img/adv_icon1.png">
 
           </div>
-        </div>
-        <div class="block block5"></div>
-    </main>
-    <footer>
+          <div class="flexrow__elem">
+            <div class="flexrow__text">
+              <h4>Надежность</h4>
+              <p>Elit cillum aute officia dolor qui excepteur. Cillum cupidatat quis minim id elit non eu aute in
+                dolore. Labore sunt in quis laborum et consectetur non sunt enim incididunt elit tempor.</p>
+            </div>
+            <img class='flexrow__icon' src="./img/adv_icon2.png">
 
-    </footer>
-  
+          </div>
+          <div class="flexrow__elem">
+            <div class="flexrow__text">
+              <h4>Сроки</h4>
+              <p>Pariatur cillum dolore eiusmod anim sunt deserunt quis. Dolore incididunt labore qui ut fugiat dolor
+                est ipsum dolore ex sit labore ipsum. Irure aute duis dolore irure voluptate enim duis proident est
+                eiusmod enim. Et ipsum Lorem magna consequat aute. Deserunt mollit in ipsum elit officia anim aliqua do
+                in dolore. Consequat ea qui nisi mollit nostrud ea.</p>
+            </div>
+            <img class='flexrow__icon' src="./img/adv_icon3.png">
+
+          </div>
+          <div class="flexrow__elem">
+            <div class="flexrow__text">
+              <h4>Выгодная цена</h4>
+              <p>Cillum officia sunt sunt in qui dolor ad voluptate aliqua qui. Fugiat ullamco esse incididunt ad sunt
+                velit non in veniam. Labore est adipisicing laboris non consequat occaecat sint sint occaecat eu
+                deserunt exercitation. Pariatur sit sunt eu quis nulla ad dolor. Dolore esse excepteur esse incididunt
+                do.</p>
+            </div>
+            <img class='flexrow__icon' src="./img/adv_icon4.png">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block feedback">
+      <div class="content">
+        
+          <header class="title--biege">Отзывы</header>
+          <main>
+            <div class="feedback-elems">
+              <div class="feedback-elem">
+                <div class="feedback-elem__photo"></div>
+                <div class="feedback-elem__info">
+                  <div class="feedback-elem__background"></div>
+                  <div class="feedback-elem__text">
+                  <div class="feedback-elem__titlle">Иванова Мария, 27 лет<br>Директор рекламного агенства</div>
+                  <p>Non ipsum quis deserunt excepteur incididunt.Labore nisi ut labore proident elit id veniam duis amet eiusmod.</p>
+                  <header>03/02/15</header>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-elem feedback-elem--reverse">
+                <div class="feedback-elem__photo--reverse"></div>
+                <div class="feedback-elem__info">
+                  <div class="feedback-elem__background--reverse"></div>
+                  <div class="feedback-elem__text--reverse">
+                    <div class="feedback-elem__titlle">Иванова Мария, 27 лет<br>Директор рекламного агенства</div>
+                    <p>Non ipsum quis deserunt excepteur incididunt.</p>
+                    <header>03/02/15</header>
+                  </div>
+                </div>
+
+              </div>
+              <div class="feedback-elem">
+                <div class="feedback-elem__photo"></div>
+                <div class="feedback-elem__info">
+                  <div class="feedback-elem__background"></div>
+                  <div class="feedback-elem__text">
+                  <div class="feedback-elem__titlle">Иванова Мария, 27 лет<br>Директор рекламного агенства</div>
+                  <p>Non ipsum quis deserunt excepteur incididunt.Labore nisi ut labore proident elit id veniam duis amet eiusmod.</p>
+                  <header>03/02/15</header>
+                </div>
+                
+              </div>
+            </div>
+          </main>
+
+        
+      </div>
+    </div>
+    <section class="block block--contacts">
+      <section class="content">
+        <header class="title--white">Контакты</header>
+        <main>
+          <div class="registration-form">
+            <header class="registration-form__title">Запись<br> на консультацию</header>
+            <form class="registration-form__form"> 
+              <input type="text" placeholder="Имя">
+              <input type="tel" placeholder="Телефон">
+              <button class="registration-form__button"> Отправить</button>
+            </form>
+          </div>
+          <div class="adress">
+            <div class="adress__top">8 (495) 675-55-76<br>mail@bargain.com</div>
+            <div class="adress__bot">г.Москва,<br>ул.Покрышкина, д.23</div>
+
+          </div>
+        </main>
+      </section>
+      <main class=""></main>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <section class="footer__left">
+        <img class ="footer__logo"  src="./img/logo.png">
+        <div class="footer__text"> Юридические услуги</div>
+      </section>
+      <section class="footer__right">
+        <div class="phone">
+          <div class="phone-number">8(800)555-55-55</div>
+          <div class="phone-text">обратный звонок</div>
+        </div>
+        <div class="footer-right-text">
+          <a>mail@bargain.com</a><br><a>mail2@bargain.com</a>
+        </div>
+      </section>
+    </div>
+
+
+  </footer>
+
   <!-- Project -->
   <script src="main.js"></script>
 </body>
+
 </html>

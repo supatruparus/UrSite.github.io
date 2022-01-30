@@ -1,0 +1,45 @@
+$arrow-width: 100%;
+$arrow-height: 1.4em;
+$top: ($arrow-height - 1em)/2;
+$arrow__circle-width: 90px;
+$arrow-Color: #c69c6d;
+$arrow-img: url(./img/handcuffs.png);
+
+.selection-arrow{
+    background-color: $arrow-Color;
+    display: flex;
+    align-items: center;
+    height: $arrow-height;
+    width: $arrow-width;
+    align-items: center;
+    position: absolute;
+    top: $top;
+    left: - $arrow__circle-width/3 *2;
+    z-index: -1;
+
+
+    .selection-arrow__circle{
+        box-sizing: content-box;
+        background-image: $arrow-img;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        background-size: 70% auto;
+        left:  - $arrow__circle-width/2;
+        border-radius: 50%;
+        width: $arrow__circle-width;
+        height: $arrow__circle-width;
+        background-color: $arrow-Color;
+
+    }
+    .selection-arrow__triangle{
+        width: 0;
+        height: 0;
+        border-top: $arrow-height/2 solid transparent;
+        border-bottom: $arrow-height/2 solid transparent;
+        border-left: $arrow-height solid $arrow-Color;
+        position: absolute;
+        left: $arrow-width;
+        z-index: -1;
+    }
+}
