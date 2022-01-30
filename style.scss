@@ -24,7 +24,7 @@ $biegeColorTransparent: #c69c6dd0;
 $lightGray: #e6e6e6;
 $leftpadding: 70px;
 $padding-right:20px;
-$content-width:60%;
+$content-width:1275px;
 $font-default: 'Montserrat', sans-serif;
 $arrow-Color:#c69c6dd0;
 $feedback__text: 0.7em;
@@ -458,10 +458,7 @@ body{
         right: -199px;
         top: -258px;
     }
-    .text{
-        width: 58%;
-        box-sizing: border-box;
-    }
+
     .block1{
         position: relative;
         border-bottom: 17px solid $lightBiegeColor;
@@ -477,12 +474,24 @@ body{
         }
 
     }
+.text-leftBorder{
+
+        width: 58%;
+        border-left: 1px solid $biegeColor;
+        padding-left: 20px;
+        margin-left: -20px;
+        margin-bottom: 15px;
+        &::after{
+            content: '';
+
+        }
+}
 .main-content {
         margin-top: 150px;
         position: relative;     
 
         .block2{
-            background: linear-gradient(#492ea1, rgba(125, 75, 190, 0.308))top center/ 62% 100% no-repeat, url(./img/bg2.png) center/auto 100% no-repeat, ;
+            background: linear-gradient(#492ea1, rgba(125, 75, 190, 0.308))top center/ $content-width 100% no-repeat, url(./img/bg2.png) center/auto 100% no-repeat, ;
             background-blend-mode: multiply;
 
             overflow: hidden;
