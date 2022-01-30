@@ -17,7 +17,9 @@ $arrow-img: url(./img/handcuffs.png);
     left: - $arrow__circle-width/3 *2;
     z-index: -1;
 
+
     .selection-arrow__circle{
+        box-sizing: content-box;
         background-image: $arrow-img;
         background-repeat: no-repeat;
         background-position: center;
@@ -28,6 +30,7 @@ $arrow-img: url(./img/handcuffs.png);
         width: $arrow__circle-width;
         height: $arrow__circle-width;
         background-color: $arrow-Color;
+
     }
     .selection-arrow__triangle{
         width: 0;

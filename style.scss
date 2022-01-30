@@ -16,6 +16,7 @@ $selection-arrow-height: 40px;
 $selection-arrow-width: 400px;
 $arrow-color: #c69c6d;
 $darkblueColor:#594aaf;
+$lightBiegeColor: #b58e65;
 $colorBlue: #594aaf;
 $biegeColor: #c69c6d;
 $block2blurcolor: linear-gradient(#5e45cfb4, #5433e644);
@@ -26,7 +27,7 @@ $padding-right:20px;
 $content-width:60%;
 $font-default: 'Montserrat', sans-serif;
 $arrow-Color:#c69c6dd0;
-$feedback__text: 0.75em;
+$feedback__text: 0.7em;
 $feedback__elem-background: #241d49f1;
 
 
@@ -133,6 +134,17 @@ h4{
     position:relative;
     display: flex;
     align-items: center;
+    &::before{
+        content: "";
+        display: block;
+        width: arrow.$arrow__circle-width + 15px;
+        height: arrow.$arrow__circle-width + 15px;
+        background-color: #594aafcc;
+        border-radius: 50%;
+        position: absolute;
+        left:  - (arrow.$arrow__circle-width  + 15px + 7.5px);
+        z-index: -99999;
+    }
 }
 
 
@@ -310,7 +322,39 @@ h4{
     }
 }
 
-
+.phone {
+    margin: 5px 0 8px 0 ;
+    display: flex;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+    height: 48px;
+    width: 300px;
+    border: 1px solid #F9C789;
+    .phone-number {
+        font-size: large;
+        color: antiquewhite;
+        font-family: 'Rubik Mono One', sans-serif;
+        flex: 3.5;
+        text-align: center;
+        align-items: center;
+        padding: 0.5999999999999973em 0 0 0;
+    }
+    
+    .phone-text {
+        background-color: $biegeColor;
+        display: flex;
+        align-items:center;
+        flex: 1;
+        text-transform: uppercase;
+        justify-content: center;
+        font-family: "Open-Sans", sans-serif;
+        font-size: xx-small;
+        padding-left: 0.29999999999999716em;
+        box-sizing: border-box;
+        flex-direction: row;
+        align-items: center;
+    }
+}
 .header-top{
     width: $content-width;
     height: 100%;
@@ -335,39 +379,7 @@ body{
         z-index: 999;
         width: 100vw;
         justify-content: flex-end;
-        .phone {
-            margin: 5px 0 8px 0 ;
-            display: flex;
-            margin-bottom: 1px;
-            box-sizing: border-box;
-            height: 48px;
-            width: 500px;
-            border: 1px solid #F9C789;
-            .phone-number {
-                font-size: large;
-                color: antiquewhite;
-                font-family: 'Rubik Mono One', sans-serif;
-                flex: 3.5;
-                text-align: center;
-                align-items: center;
-                padding: 0.5999999999999973em 0 0 0;
-            }
-            
-            .phone-text {
-                background-color: $biegeColor;
-                display: flex;
-                align-items:center;
-                flex: 1;
-                text-transform: uppercase;
-                justify-content: center;
-                font-family: "Open-Sans", sans-serif;
-                font-size: xx-small;
-                padding-left: 0.29999999999999716em;
-                box-sizing: border-box;
-                flex-direction: row;
-                align-items: center;
-            }
-        }
+
         .header-menu-container{
             background-size: 100% 100%;
             background-image: url('./img/header.png');
@@ -451,8 +463,18 @@ body{
         box-sizing: border-box;
     }
     .block1{
-        border-bottom: 35px solid #c69c6d9d;
+        position: relative;
+        border-bottom: 17px solid $lightBiegeColor;
         box-shadow: 2px red;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient($biegeColor, $biegeColor);
+        }
 
     }
 .main-content {
@@ -589,7 +611,7 @@ body{
 .feedback-elem__text{
     position: absolute;
     right:56px;
-    top:20px;
+    top:13px;
     font-size: $feedback__text;
     width: 240px;
 
@@ -708,5 +730,42 @@ body{
     margin-bottom: 33px;
 }
 .footer{
-    height: 200px;
+    height: 180px;
+    width: 100%;
 }
+.footer-container{
+    margin: 5px auto;
+    width: 810px;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left{
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    width: 420px;
+}
+.footer-logo{
+    height: 100%;
+}
+.footer__text{
+    width: 233px;
+    @extend h4;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 5px 8px;
+}
+.footer__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.footer-right-text{
+    text-align: right;
+
+
+}
+
