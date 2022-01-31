@@ -430,7 +430,6 @@ body {
 		font-size: 18px;
 		color: #d0d0d0;
 		background-color: black;
-		background-image: url(./img/back.png);
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -538,6 +537,8 @@ body .main-content {
 		margin: 150px auto 0px;
 		position: relative;
 		width: 1275px;
+		background-image: url(./img/back.png);
+		background-size: cover;
 }
 body .main-content .adventages .adventages-list {
 		margin: -55px 0 0 -8%;
