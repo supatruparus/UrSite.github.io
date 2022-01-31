@@ -182,11 +182,11 @@ h4{
         font-size: small;
     }
     @media screen and (max-width:768px) {
-        width: 90%;
+        width: 70%;
         font-size: small;
     }
     @media screen and (max-width:576px) {
-        width: 100%;
+        width: 900px;
         font-size: small;
     }
 
@@ -634,6 +634,16 @@ body{
     position: relative;
     height: 120%;
     margin-bottom: -43px;
+    // &:nth-child(2){
+    //     .feedback-elem__photo{
+    //         width: 80%;
+    //         height: 70%;
+    //         background-image: url('./img/oleg.jpg');
+    //         background-position: center;
+    //         background-size: cover;
+    //         border-radius: 50%;
+    //     }
+    // }
 }
 .feedback-elem__photo{
     background-image: url(./img/feedback__photo.png);
@@ -641,6 +651,7 @@ body{
     width: 180px;
     margin-right: -90px;
     background-size: cover;
+
 }
 .feedback-elem__background{
     position: relative;

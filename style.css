@@ -187,13 +187,13 @@ h4, .footer__text {
 }
 @media screen and (max-width: 768px) {
 		.content {
-				width: 90%;
+				width: 70%;
 				font-size: small;
 		}
 }
 @media screen and (max-width: 576px) {
 		.content {
-				width: 100%;
+				width: 900px;
 				font-size: small;
 		}
 }
