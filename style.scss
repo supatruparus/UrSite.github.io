@@ -529,6 +529,18 @@ body{
         background-image: url(./img/back.png);
         background-size: cover;
         @extend %adaptive-width;
+        @media screen and (max-width:1140px) {
+            width: 1000px;
+        }
+        @media screen and (max-width:992px) {
+            width: 900px;
+        }
+        @media screen and (max-width:768px) {
+            width: 700px;
+        }
+        @media screen and (max-width:576px) {
+            width: 500px;
+        }
 
         .adventages{
 
