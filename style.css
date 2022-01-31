@@ -98,6 +98,10 @@
 		padding: 0 20px;
 }
 
+button:hover {
+		opacity: 0.6;
+}
+
 .title--white, .registration-form__title {
 		font-family: "Montserrat", sans-serif;
 		text-transform: uppercase;
@@ -210,11 +214,17 @@ h4, .footer__text {
 		background-image: url("./img/arrow.png");
 		padding: 0 4% 0 2%;
 }
+.arrow-right:hover {
+		opacity: 0.7;
+}
 
 .arrow-left {
 		background-image: url("./img/arrow-left.png");
 		font-size: 1.2em;
 		padding: 0 34px 0 45px;
+}
+.arrow-left:hover {
+		opacity: 0.7;
 }
 
 #registration {
@@ -737,7 +747,7 @@ body .main-content .adventages .adventages-list {
 
 .registration-form__title {
 		color: #594aaf;
-		font-size: 2em;
+		font-size: 1.5rem;
 		text-align: right;
 		margin: 0 47px 0 0;
 }
@@ -753,11 +763,13 @@ body .main-content .adventages .adventages-list {
 }
 .registration-form__form input {
 		background-color: #e6e6e6;
+		border: none;
 		height: 30px;
 		width: 100%;
 }
 
 .registration-form__button {
+		border: none;
 		font-weight: 800;
 		text-transform: uppercase;
 		font-size: 1.1em;

@@ -85,6 +85,10 @@ $feedback__elem-background: #241d49f1;
     font-size: 0.9em;
     padding:0 20px;
 }
+
+button:hover{
+    opacity: 0.6;
+}
 .title--white{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -197,6 +201,9 @@ h4{
     background-image: url('./img/arrow.png');
     @extend %arrow;
     padding: 0 4% 0 2%;
+    &:hover{
+        opacity: 0.7;
+    }
 
 }
 .arrow-left{
@@ -204,6 +211,9 @@ h4{
     @extend %arrow;
     font-size: 1.2em;
     padding: 0 34px 0 45px;
+    &:hover{
+        opacity: 0.7;
+    }
 
 }
 #registration{
@@ -710,7 +720,7 @@ body{
 .registration-form__title{
     @extend .title--white;
     color: $darkblueColor;
-    font-size: 2em;
+    font-size: 1.5rem;
     text-align: right;
     margin: 0 47px 0 0;
 }
@@ -725,11 +735,13 @@ body{
     
     input{
         background-color: $lightGray;
+        border: none;
         height: 30px;
         width: 100%;
     }
 }
 .registration-form__button{
+    border: none;
     font-weight: 800;
     text-transform: uppercase;
     font-size: 1.1em;
@@ -737,9 +749,10 @@ body{
     height: 50px;
     background-image: url('./img/button.jpg');
     color:whitesmoke;
-    
-    
 }
+    
+    
+
 .adress{
     color:white;
     $width: 260px;
