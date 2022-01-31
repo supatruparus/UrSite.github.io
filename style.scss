@@ -535,9 +535,9 @@ body{
 }
 
 .block2{
-    background: linear-gradient(#24074b, rgba(57, 27, 97, 0.308))top center/ $content-width 100% no-repeat, url(./img/bg2.png) center/auto 100% no-repeat, ;
+    $bgcolor: #21094bdb, #1e0c41cf;
+    background: linear-gradient($bgcolor) top center/ $content-width 100% no-repeat, url(./img/bg2.png) center/auto 100% no-repeat, ;
     background-blend-mode: multiply;
-    backdrop-filter: blur(1px);
     overflow: hidden;
     height: auto;
     box-sizing: border-box;
@@ -569,7 +569,7 @@ body{
         height: 600px;
         right: -200px;
     }
-    .block2-blur{
+    .block2__blur{
         position: absolute;
         z-index: -1;
         top: 0;
@@ -578,7 +578,7 @@ body{
         width: 100%;
          color: #03011bb2;
         background: $block2blurcolor;
-        backdrop-filter: blur(3.4px);
+        backdrop-filter: blur(4px);
         height: 100%;
     }
     .block2-list {

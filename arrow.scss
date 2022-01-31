@@ -1,7 +1,7 @@
 $arrow-width: 100%;
-$arrow-height: 1.4em;
-$top: ($arrow-height - 1em)/2;
-$arrow__circle-width: 90px;
+$arrow-height: 1.8em;
+$top: 0em;
+$arrow__circle-width: 110px;
 $arrow-Color: #c69c6d;
 $arrow-img: url(./img/handcuffs.png);
 
@@ -14,7 +14,7 @@ $arrow-img: url(./img/handcuffs.png);
     align-items: center;
     position: absolute;
     top: $top;
-    left: - $arrow__circle-width/3 *2;
+    left: - ($arrow__circle-width/2 + 5px);
     z-index: -1;
 
 
