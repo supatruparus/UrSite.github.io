@@ -411,25 +411,26 @@ body{
                 text-transform: uppercase;
                 display: flex;
                 height: 75px;
-                width: $content-width;
+                width: 100%;
                 justify-content: space-between;
                 @extend %adaptive-widht;
+                 
 
             }
-            .header-circle {
+            .header-logo {
+                background-image: url('./img/logo.png');
+                background-position: center;
+                background-repeat: no-repeat;
+
                 border-radius: 50%;
                 width: 100px;
                 height: 100px;
-                background: #F9C789DD;
-                backdrop-filter: blur(2px);
-                background-clip: padding-box;
-                z-index: 9999;
                 border: 7px solid #F9C78933;
                 align-content: center;
                 justify-content: center;
                 display: flex;
-                animation: opacity 1s ease-in-out infinite;
-                animation-direction: alternate;
+                // animation: opacity 1s ease-in-out infinite;
+                // animation-direction: alternate;
             }
             .header-circle>img {
                 padding-top: 10px;
