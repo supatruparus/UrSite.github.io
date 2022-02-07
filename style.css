@@ -12,7 +12,6 @@
   left: -60px;
   z-index: -1;
 }
-
 .selection-arrow .selection-arrow__circle {
   box-sizing: content-box;
   background-image: url(./img/handcuffs.png);
@@ -26,7 +25,11 @@
   height: 110px;
   background-color: #c69c6d;
 }
-
+@media screen and (max-width: 768px) {
+  .selection-arrow .selection-arrow__circle {
+    display: none;
+  }
+}
 .selection-arrow .selection-arrow__triangle {
   width: 0;
   height: 0;
@@ -133,7 +136,6 @@ h4, .footer__text {
   z-index: 0;
   overflow: visible;
   min-height: 20em;
-  display: flex;
   height: 100%;
   margin: 0 auto;
   padding-top: 0.3em;
@@ -211,10 +213,11 @@ h4, .footer__text {
   min-height: 512px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: center;
 }
 @media screen and (max-width: 1140px) {
   .block, .block--contacts {
-    background-size: auto 100%;
+    background-size: 100% auto;
   }
 }
 
@@ -232,6 +235,18 @@ h4, .footer__text {
   flex-direction: column-reverse;
   display: flex;
   width: 207px;
+}
+@media screen and (max-width: 1140px) {
+  .flexrow__elem {
+    width: 24%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .flexrow__elem {
+    width: 49%;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
 .flexrow__elem .flexrow__icon {
   width: 64%;
@@ -253,13 +268,11 @@ h4, .footer__text {
 @media screen and (max-width: 768px) {
   .flexrow__elem .flexrow__icon {
     width: auto;
-    display: none;
   }
 }
 @media screen and (max-width: 576px) {
   .flexrow__elem .flexrow__icon {
     width: auto;
-    display: none;
   }
 }
 .flexrow__elem:nth-child(1) .flexrow__icon {
@@ -282,63 +295,31 @@ h4, .footer__text {
   height: max-content;
   background-color: #4b3f86f1;
 }
+@media screen and (max-width: 1140px) {
+  .flexrow__elem .flexrow__text {
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 992px) {
+  .flexrow__elem .flexrow__text {
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flexrow__elem .flexrow__text {
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 576px) {
+  .flexrow__elem .flexrow__text {
+    background-color: transparent;
+  }
+}
 .flexrow__elem .flexrow__text h4, .flexrow__elem .flexrow__text .footer__text {
   font-size: 0.9em;
 }
 .flexrow__elem .flexrow__text p {
   font-size: 0.8em;
-}
-@media screen and (max-width: 1140px) {
-  .flexrow__elem .flexrow__text {
-    min-height: 620px;
-    width: 100%;
-    flex-direction: row-reverse;
-    min-height: auto;
-  }
-}
-@media screen and (max-width: 992px) {
-  .flexrow__elem .flexrow__text {
-    min-height: 600px;
-    flex-direction: row-reverse;
-    width: 100%;
-    min-height: auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  .flexrow__elem .flexrow__text {
-    flex-direction: row-reverse;
-    width: 100%;
-    min-height: auto;
-  }
-}
-@media screen and (max-width: 576px) {
-  .flexrow__elem .flexrow__text {
-    flex-direction: row-reverse;
-    width: 100%;
-    min-height: auto;
-  }
-}
-@media screen and (max-width: 1140px) {
-  .flexrow__elem {
-    width: auto;
-    min-height: auto;
-  }
-}
-@media screen and (max-width: 992px) {
-  .flexrow__elem {
-    width: auto;
-    min-height: auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  .flexrow__elem {
-    min-height: auto;
-  }
-}
-@media screen and (max-width: 576px) {
-  .flexrow__elem {
-    min-height: auto;
-  }
 }
 
 .phone {
@@ -528,8 +509,29 @@ h4, .footer__text {
   height: max-content;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-end;
+}
+@media screen and (max-width: 1140px) {
+  .adventages .adventages-list {
+    margin: 0px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .adventages .adventages-list {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .adventages .adventages-list {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .adventages .adventages-list {
+    margin: 0px;
+  }
 }
 
 body {
@@ -554,7 +556,7 @@ body {
 }
 
 .block2 {
-  background: linear-gradient(#21094bdb, #1e0c41cf) top center/62% 100% no-repeat, url(./img/bg2.png) center/auto 100% no-repeat;
+  background: linear-gradient(#21094bdb, #1e0c41cf) top center/62% 100% no-repeat, url(./img/bg2.png) center/cover no-repeat;
   background-blend-mode: multiply;
   overflow: hidden;
   height: auto;
