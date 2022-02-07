@@ -146,25 +146,21 @@ h4, .footer__text {
 @media screen and (max-width: 1140px) {
   .content {
     width: 68%;
-    font-size: smaller;
   }
 }
 @media screen and (max-width: 992px) {
   .content {
-    width: 90%;
-    font-size: small;
+    width: 92%;
   }
 }
 @media screen and (max-width: 768px) {
   .content {
-    width: 70%;
-    font-size: small;
+    width: 98%;
   }
 }
 @media screen and (max-width: 576px) {
   .content {
-    width: 900px;
-    font-size: small;
+    width: 100%;
   }
 }
 
@@ -537,7 +533,7 @@ h4, .footer__text {
 }
 
 body {
-  font-size: 18px;
+  font-size: medium;
   color: #d0d0d0;
   background-color: black;
   position: relative;
@@ -545,6 +541,16 @@ body {
   flex-direction: column;
   align-content: space-around;
   font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: x-large;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    font-size: x-large;
+  }
 }
 
 .block2 {
@@ -557,11 +563,6 @@ body {
 @media screen and (max-width: 1140px) {
   .block2 {
     background: linear-gradient(#0b0421, rgba(83, 10, 179, 0.308)) top center/92% 100% no-repeat, url(./img/bg2.png) center/auto 100% no-repeat;
-  }
-}
-@media screen and (max-width: 992px) {
-  .block2 {
-    width: 92%;
   }
 }
 @media screen and (max-width: 768px) {

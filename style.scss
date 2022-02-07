@@ -140,22 +140,7 @@ h4{
     box-sizing: border-box;
     background-position: right;
     background-repeat: no-repeat;
-    @media screen and (max-width:1140px) {
-        width: 68%;
-        font-size: smaller;
-    }
-    @media screen and (max-width:992px) {
-        width: 90%;
-        font-size: small;
-    }
-    @media screen and (max-width:768px) {
-        width: 70%;
-        font-size: small;
-    }
-    @media screen and (max-width:576px) {
-        width: 900px;
-        font-size: small;
-    }
+    @include adaptiveWidth();
 
 }
 .content__main{
@@ -508,7 +493,7 @@ h4{
 
 }
 body{
-    font-size: 18px;
+    font-size: medium;
     color: #d0d0d0;
     background-color: black;
     position: relative;
@@ -516,6 +501,19 @@ body{
     flex-direction: column;
     align-content: space-around;
     font-family: 'Montserrat', sans-serif;
+    @media screen and (max-width:1140px) {
+      
+
+      }
+      @media screen and (max-width:992px) {
+        
+      }
+      @media screen and (max-width:768px) {
+        font-size: x-large;
+      }
+      @media screen and (max-width:576px) {
+        font-size: x-large;
+      }
 
 
 }
@@ -530,7 +528,7 @@ body{
     @media screen and (max-width:1140px) {
     background: linear-gradient(#0b0421, rgba(83, 10, 179, 0.308))top center/ 92% 100% no-repeat, url(./img/bg2.png) center/auto 100% no-repeat, ;            }
     @media screen and (max-width:992px) {
-        width: 92%;
+        
     }
     @media screen and (max-width:768px) {
         background: linear-gradient(#0b0421, rgba(83, 10, 179, 0.308))top center/ 98% 100% no-repeat, url(./img/bg2.png) center/auto 100% no-repeat, ;
