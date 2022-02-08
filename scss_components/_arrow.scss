@@ -1,3 +1,4 @@
+@use 'sass:math';
 $arrow-width: 100%;
 $arrow-height: 1.8em;
 $top: 0em;
@@ -30,12 +31,23 @@ $arrow-img: url(./img/handcuffs.png);
         width: $arrow__circle-width;
         height: $arrow__circle-width;
         background-color: $arrow-Color;
+        @media screen and (max-width:1140px) {
+        }
+        @media screen and (max-width:992px) {
+        }
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+        @media screen and (max-width:576px) {
+            
+        }
+        
 
     }
     .selection-arrow__triangle{
         width: 0;
         height: 0;
-        border-top: $arrow-height/2 solid transparent;
+        border-top: math.div($arrow-height, 2) solid transparent;
         border-bottom: $arrow-height/2 solid transparent;
         border-left: $arrow-height solid $arrow-Color;
         position: absolute;
